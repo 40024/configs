@@ -1,0 +1,201 @@
+{
+    "window.commandCenter": false,
+    "git.autofetch": true,
+    "workbench.activityBar.location": "top",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "workbench.editor.empty.hint": "hidden",
+    "explorer.confirmDelete": false,
+    "[markdown]": {
+        "editor.foldingStrategy": "indentation",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "off"
+        },
+        "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#1073cf2d",
+        "editor.lineHighlightBorder": "#9fced11f"
+    },
+    "editor.hover.delay": 0,
+    "editor.hover.hidingDelay": 0,
+    "python.createEnvironment.contentButton": "show",
+    "code-runner.runInTerminal": true,
+    "scm.experimental.showHistoryGraph": true,
+    "debug.showVariableTypes": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "zig": "zig run",
+        "cpp": "g++ -Wall $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "/home/user/.pyenv/shims/python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runghc",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName",
+        "mojo": "mojo run",
+        "erlang": "escript",
+        "spwn": "spwn build",
+        "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+        "gleam": "gleam run -m $fileNameWithoutExt"
+    },
+    "workbench.settings.applyToAllProfiles": [],
+    "zenMode.fullScreen": false,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "code-runner.terminalRoot": "/mnt/",
+    "editor.lineNumbers": "on",
+    "files.autoSave": "afterDelay",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "editor.hover.sticky": false,
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\_Main\\Programs\\nvim-win64\\bin\\nvim.exe",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "Fira Code",
+    "workbench.list.smoothScrolling": true,
+    "vscode-neovim.afterInitConfig": [
+        "startinsert"
+    ],
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "constant.other",
+                ],
+                "settings": {
+                    "foreground": "#00b7ff"
+                }
+            },
+            {
+                "scope": [
+                    "string",
+                    "constant.numeric"
+                ],
+                "settings": {
+                    "foreground": "#E6DB74"
+                }
+            },
+            {
+                "scope": [
+                    "comment"
+                ],
+                "settings": {
+                    "foreground": "#6A9955"
+                }
+            },
+            {
+                "scope": [
+                    "variable.parameter.function-call",
+                ],
+                "settings": {
+                    "foreground": "#eee7e7"
+                }
+            },
+            {
+                "scope": [
+                    "meta.function-call",
+                ],
+                "settings": {
+                    "foreground": "#d8cdd1"
+                }
+            },
+            {
+                "scope": [
+                    "markup.heading",
+                ],
+                "settings": {
+                    "foreground": "#569CD6"
+                }
+            },
+            {
+                "scope": [
+                    "source.python",
+                    "variable.parameter",
+                    "meta.function-call",
+                ],
+                "settings": {
+                    "foreground": "#49E0FD"
+                }
+            },
+        ]
+    },
+    "workbench.colorTheme": "Monokai++ Unified",
+    "editor.minimap.enabled": false
+}
