@@ -118,7 +118,7 @@
     },
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "code-runner.terminalRoot": "/mnt/",
-    "editor.lineNumbers": "on",
+    "editor.lineNumbers": "relative",
     "files.autoSave": "afterDelay",
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "strict",
@@ -196,6 +196,6 @@
             },
         ]
     },
-    "workbench.colorTheme": "Monokai++ Unified",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Monokai++ Unified"
 }
