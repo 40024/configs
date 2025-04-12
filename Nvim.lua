@@ -11,6 +11,8 @@ vim.opt.inccommand = 'split'
 
 vim.opt.scrolloff = 20
 
+vim.keymap.set("n", "X", "dd", { noremap = true, silent = true })
+
 vim.api.nvim_create_autocmd('TextYankPost', {
     desc = 'Highlight when yanking (copying) text',
     group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
