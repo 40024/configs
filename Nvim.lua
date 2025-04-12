@@ -2,16 +2,14 @@
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
-vim.schedule(function()
-    vim.opt.clipboard = 'unnamedplus'
-end)
+vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 vim.opt.inccommand = 'split'
 
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 20
 
 vim.api.nvim_create_autocmd('TextYankPost', {
     desc = 'Highlight when yanking (copying) text',
@@ -20,3 +18,27 @@ vim.api.nvim_create_autocmd('TextYankPost', {
         vim.highlight.on_yank()
     end,
 })
+
+if vim.g.vscode then
+    local opts = { silent = true, noremap = true }
+
+    vim.keymap.set('n', '<C-d>', function()
+      vim.fn['vscode#notify']('editorScroll', {
+        to = 'down',
+        by = 'page',
+        value = 1,
+        revealCursor = true,
+        select = false
+      })
+    end, opts)
+
+    vim.keymap.set('n', '<C-u>', function()
+      vim.fn['vscode#notify']('editorScroll', {
+        to = 'up',
+        by = 'page',
+        value = 1,
+        revealCursor = true,
+        select = false
+      })
+    end, opts)
+end
