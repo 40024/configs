@@ -1,0 +1,106 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "workbench.colorTheme": "Monokai++ Unified",
+  "files.autoSave": "afterDelay",
+  "workbench.startupEditor": "none",
+  "git.autofetch": "all",
+  "workbench.activityBar.location": "top",
+  "editor.hover.enabled": true,
+  "editor.hover.delay": 0,
+  "zenMode.fullScreen": false,
+  "zenMode.hideActivityBar": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "chat.commandCenter.enabled": false,
+  "files.associations": {
+    "*.ptest": "json"
+  },
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "off"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.lineNumbers": "relative",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+  },
+  "[markdown]": {
+    "editor.foldingStrategy": "indentation"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "constant.other",
+        ],
+        "settings": {
+          "foreground": "#00b7ff"
+        }
+      },
+      {
+        "scope": [
+          "string",
+          "constant.numeric"
+        ],
+        "settings": {
+          "foreground": "#E6DB74"
+        }
+      },
+      {
+        "scope": [
+          "comment"
+        ],
+        "settings": {
+          "foreground": "#6A9955"
+        }
+      },
+      {
+        "scope": [
+          "variable.parameter.function-call",
+        ],
+        "settings": {
+          "foreground": "#eee7e7"
+        }
+      },
+      {
+        "scope": [
+          "meta.function-call",
+        ],
+        "settings": {
+          "foreground": "#d8cdd1"
+        }
+      },
+      {
+        "scope": [
+          "source.python",
+          "variable.parameter",
+          "meta.function-call",
+        ],
+        "settings": {
+          "foreground": "#49E0FD"
+        }
+      },
+      {
+        "scope": [
+          "markup.heading",
+        ],
+        "settings": {
+          "foreground": "#569CD6"
+        }
+      },
+    ]
+  },
+  "editor.minimap.enabled": false,
+  "editor.hover.hidingDelay": 0,
+  "editor.hover.sticky": false,
+}

@@ -1,4 +1,3 @@
-
 // Place your key bindings in this file to override the defaults
 [
     {
@@ -30,7 +29,7 @@
         "when": "!activeEditorGroupEmpty"
     },
     {
-        "key": "ctrl+shift+tab",
+        "key": "alt+j",
         "command": "workbench.action.previousEditor"
     },
     {
@@ -750,5 +749,9 @@
         "key": "ctrl+u",
         "command": "-vscode-neovim.ctrl-u",
         "when": "editorTextFocus && neovim.ctrlKeysNormal.u && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.nextEditor"
     }
 ]
