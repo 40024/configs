@@ -1,0 +1,126 @@
+{
+  "workbench.colorTheme": "Monokai++ Unified",
+  "window.menuBarVisibility": "toggle",
+  "editor.fontSize": 12,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.enabled": false,
+  "editor.minimap.side": "right",
+  "editor.fontFamily": "'JetbrainsMono Nerd Font','Maple Mono', monospace",
+  "extensions.autoUpdate": false,
+  "workbench.statusBar.visible": false,
+  "terminal.external.linuxExec": "kitty",
+  "terminal.explorerKind": "both",
+  "terminal.sourceControlRepositoriesKind": "both",
+  "telemetry.telemetryLevel": "off",
+  "workbench.activityBar.location": "top",
+  "window.customTitleBarVisibility": "auto",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "window.commandCenter": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "workbench.editor.empty.hint": "hidden",
+  "explorer.confirmDelete": false,
+  "[markdown]": {
+    "editor.foldingStrategy": "indentation",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "off"
+    },
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "editor.hover.delay": 0,
+  "editor.hover.hidingDelay": 0,
+  "python.createEnvironment.contentButton": "show",
+  "code-runner.runInTerminal": true,
+  "scm.experimental.showHistoryGraph": true,
+  "debug.showVariableTypes": true,
+  "workbench.settings.applyToAllProfiles": [],
+  "zenMode.fullScreen": false,
+  "editor.lineNumbers": "relative",
+  "files.autoSave": "afterDelay",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "strict",
+  "vscode-neovim.afterInitConfig": [
+    "startinsert"
+  ],
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "constant.other",
+        ],
+        "settings": {
+          "foreground": "#00b7ff"
+        }
+      },
+      {
+        "scope": [
+          "string",
+          "constant.numeric"
+        ],
+        "settings": {
+          "foreground": "#E6DB74"
+        }
+      },
+      {
+        "scope": [
+          "comment"
+        ],
+        "settings": {
+          "foreground": "#6A9955"
+        }
+      },
+      {
+        "scope": [
+          "variable.parameter.function-call",
+        ],
+        "settings": {
+          "foreground": "#eee7e7"
+        }
+      },
+      {
+        "scope": [
+          "meta.function-call",
+        ],
+        "settings": {
+          "foreground": "#d8cdd1"
+        }
+      },
+      {
+        "scope": [
+          "markup.heading",
+        ],
+        "settings": {
+          "foreground": "#569CD6"
+        }
+      },
+      {
+        "scope": [
+          "source.python",
+          "variable.parameter",
+          "meta.function-call",
+        ],
+        "settings": {
+          "foreground": "#49E0FD"
+        }
+      },
+    ]
+},
+"workbench.sideBar.location": "right",
+}
