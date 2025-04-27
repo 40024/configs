@@ -1,4 +1,5 @@
 
+vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
@@ -9,10 +10,11 @@ vim.opt.smartcase = true
 
 vim.opt.inccommand = 'split'
 
-vim.opt.scrolloff = 20
+vim.opt.scrolloff = 10
 
 vim.keymap.set('n', 'X', 'dd', { noremap = true, silent = true })
 vim.keymap.set('i', '<C-v>', '<Nop>')
+vim.keymap.set('n', 'W', 'M', { noremap = true })
 
 vim.api.nvim_create_autocmd('TextYankPost', {
     desc = 'Highlight when yanking (copying) text',
@@ -45,3 +47,4 @@ if vim.g.vscode then
       })
     end, opts)
 end
+
