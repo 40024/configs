@@ -180,7 +180,8 @@ if [ -t 1 ]; then
     alias s='sudo'
     alias h='history'
     alias hist='history'
-    alias p='sudo pacman'
+    alias p='sudo pacman-fla-wrapper'
+    alias open='dolphin'
 
     # Helpful aliases
     if [[ -x "$(which eza)" ]]; then
@@ -212,4 +213,4 @@ if [ -t 1 ]; then
     autoload -Uz add-zsh-hook
     add-zsh-hook -Uz precmd slow_load_warning
     # add-zsh-hook zshexit cleanup
-fi
+f
