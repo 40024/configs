@@ -121,6 +121,7 @@
         }
       },
     ]
-},
-"workbench.sideBar.location": "right",
+  },
+  "workbench.sideBar.location": "right",
+  "editor.dragAndDrop": false
 }
