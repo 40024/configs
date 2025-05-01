@@ -254,7 +254,7 @@
         "when": "viewContainer.workbench.view.debug.enabled"
     },
     {
-        "key": "ctrl+shift+d",
+        "key": "ctrl+d",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
