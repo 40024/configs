@@ -650,5 +650,10 @@
     {
         "key": "ctrl+shift+a",
         "command": "workbench.action.toggleEditorWidths"
+    },
+    {
+        "key": "ctrl+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
     }
 ]
