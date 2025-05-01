@@ -10,17 +10,14 @@
   "editor.minimap.side": "right",
   "editor.fontFamily": "'JetbrainsMono Nerd Font','Maple Mono', monospace",
   "extensions.autoUpdate": false,
-  "workbench.statusBar.visible": false,
   "terminal.external.linuxExec": "kitty",
   "terminal.explorerKind": "both",
   "terminal.sourceControlRepositoriesKind": "both",
   "telemetry.telemetryLevel": "off",
   "workbench.activityBar.location": "top",
-  "window.customTitleBarVisibility": "auto",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "window.commandCenter": false,
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -123,5 +120,8 @@
     ]
   },
   "workbench.sideBar.location": "right",
-  "editor.dragAndDrop": false
+  "editor.dragAndDrop": false,
+  "git.blame.statusBarItem.enabled": false,
+  "editor.selectionClipboard": false,
+  "chat.commandCenter.enabled": false
 }
