@@ -620,7 +620,8 @@
     },
     {
         "key": "ctrl+d",
-        "command": "vscode-neovim.ctrl-d"
+        "command": "vscode-neovim.ctrl-d",
+        "when": "editorFocus && neovim.mode != 'insert'"
     },
     {
         "key": "shift+u",
@@ -655,5 +656,10 @@
         "key": "ctrl+k e",
         "command": "-workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "vscode-neovim.ctrl-u",
+        "when": "editorTextFocus && neovim.mode != 'insert'"
     }
 ]
