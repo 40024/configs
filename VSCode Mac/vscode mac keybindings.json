@@ -38,16 +38,6 @@
         "command": "-workbench.action.previousEditor"
     },
     {
-        "key": "shift+cmd+g",
-        "command": "workbench.view.scm",
-        "when": "workbench.scm.active"
-    },
-    {
-        "key": "ctrl+shift+g",
-        "command": "-workbench.view.scm",
-        "when": "workbench.scm.active"
-    },
-    {
         "key": "shift+cmd+down",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
@@ -420,7 +410,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "cmd+s cmd+w",
+        "key": "shift+alt+s",
         "command": "workbench.action.gotoSymbol",
         "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
     },
@@ -430,7 +420,7 @@
         "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
     },
     {
-        "key": "cmd+s cmd+w",
+        "key": "shift+alt+s",
         "command": "editor.action.accessibleViewGoToSymbol",
         "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
     },
@@ -465,10 +455,6 @@
         "key": "shift+cmd+e",
         "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
         "when": "inFilesPicker && inQuickOpen"
-    },
-    {
-        "key": "shift+alt+s",
-        "command": "outline.focus"
     },
     {
         "key": "cmd+g",
@@ -528,24 +514,16 @@
         "when": "!editorTextFocus"
     },
     {
-        "key": "shift+cmd+g c",
-        "command": "git.commit",
-        "when": "view.workbench.scm.visible"
+        "key": "cmd+; shift+cmd+c",
+        "command": "git.commit"
     },
     {
-        "key": "shift+cmd+g p",
-        "command": "git.push",
-        "when": "view.workbench.scm.visible"
+        "key": "cmd+; shift+cmd+p",
+        "command": "git.push"
     },
     {
-        "key": "shift+cmd+g v",
-        "command": "git.viewChanges",
-        "when": "view.workbench.scm.visible"
-    },
-    {
-        "key": "shift+cmd+g d",
-        "command": "git.cleanAll",
-        "when": "view.workbench.scm.visible"
+        "key": "cmd+; shift+cmd+d",
+        "command": "git.cleanAll"
     },
     {
         "key": "shift+cmd+g shift+cmd+g",
@@ -722,9 +700,9 @@
         "command": "workbench.action.closeActiveEditor"
     },
     {
-        "key": "shift+cmd+d",
+        "key": "cmd+d",
         "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
+        "when": "editorFocus && neovim.mode == 'insert'"
     },
     {
         "key": "cmd+d",
@@ -783,5 +761,59 @@
         "key": "ctrl+e",
         "command": "-vscode-neovim.ctrl-e",
         "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "cmd+; cmd+c",
+        "command": "notifications.clearAll"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "cmd+h",
+        "command": "git.viewHistory"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "gitTreeCompare.openChanges"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "workbench.action.toggleAuxiliaryBar",
+        "when": "config.workbench.layoutControl.type == 'both' && config.workbench.sideBar.location == 'left' || config.workbench.layoutControl.type == 'toggles' && config.workbench.sideBar.location == 'left'"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "git.openChange"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus && neovim.mode != 'insert'"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus && neovim.mode == 'insert'"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "-editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
     }
 ]

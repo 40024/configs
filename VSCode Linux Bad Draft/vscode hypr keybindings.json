@@ -254,18 +254,14 @@
         "when": "viewContainer.workbench.view.debug.enabled"
     },
     {
-        "key": "ctrl+d",
+        "key": "ctrl+shift+d",
         "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
+        "when": "editorFocus && neovim.mode != 'insert'"
     },
     {
         "key": "ctrl+d",
         "command": "-editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+shift+alt+d",
-        "command": "editor.action.addSelectionToPreviousFindMatch"
     },
     {
         "key": "shift+k",
@@ -611,5 +607,15 @@
         "key": "ctrl+j",
         "command": "-vscode-neovim.send",
         "when": "editorTextFocus && neovim.ctrlKeysInsert.j && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorFocus && neovim.mode == 'insert'"
     }
 ]
