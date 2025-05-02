@@ -29,6 +29,7 @@ alias n='nvim'
 alias fzf="fzf --bind 'enter:execute(nvim {})'"
 alias ts='sudo timeshift'
 alias nk='kitty $(pwd) &'
+alias open='dolphin'
 
 #  This is your file 
 # Add your configurations here
