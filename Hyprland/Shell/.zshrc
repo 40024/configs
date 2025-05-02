@@ -15,8 +15,18 @@ fi
 # oh-my-zsh plugins are loaded  in ~/.hyde.zshrc file, see the file for more information
 
 #  Aliases 
+# Core
+alias s='sudo'
+alias p='sudo /usr/local/bin/pacman-names'
+# History
+alias h='history'
+alias hist='history'
+# Clipboard
 alias pbcopy='wl-copy'
+alias xsel='wl-copy'
+# One-offs
 alias n='nvim'
+alias fzf="fzf --bind 'enter:execute(nvim {})'"
 
 #  This is your file 
 # Add your configurations here
