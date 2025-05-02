@@ -26,8 +26,9 @@ alias pbcopy='wl-copy'
 alias xsel='wl-copy'
 # One-offs
 alias n='nvim'
-alias fzf='fzf --bind "enter:execute(nvim {})"'
+alias fzf="fzf --bind 'enter:execute(nvim {})'"
 alias ts='sudo timeshift'
+alias nk='kitty $(pwd) &'
 
 #  This is your file 
 # Add your configurations here
