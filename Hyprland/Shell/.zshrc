@@ -16,6 +16,7 @@ fi
 
 #  Aliases 
 alias pbcopy='wl-copy'
+alias n='nvim'
 
 #  This is your file 
 # Add your configurations here
