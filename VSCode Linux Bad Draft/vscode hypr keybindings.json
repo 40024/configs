@@ -677,7 +677,7 @@
     {
         "key": "ctrl+[",
         "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack || neovim.mode != 'insert'"
+        "when": "canNavigateBack && neovim.mode != 'insert'"
     },
     {
         "key": "ctrl+alt+-",
@@ -687,7 +687,7 @@
     {
         "key": "ctrl+]",
         "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward || neovim.mode != 'insert'"
+        "when": "canNavigateForward && neovim.mode != 'insert'"
     },
     {
         "key": "ctrl+shift+-",
