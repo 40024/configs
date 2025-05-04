@@ -18,6 +18,7 @@ fi
 # Core
 alias s='sudo'
 alias p='sudo /usr/local/bin/pacman-names'
+alias z='cd'
 # History
 alias h='history'
 alias hist='history'
@@ -32,7 +33,9 @@ alias nk='kitty $(pwd) &'
 alias open='dolphin'
 
 #  This is your file 
-# Add your configurations here
+bindkey '^H' backward-kill-word
+bindkey '^E' kill-line
+bindkey '^A' backward-kill-line
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
