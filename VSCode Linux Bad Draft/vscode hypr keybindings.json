@@ -711,10 +711,6 @@
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+v",
-        "command": "editor.action.clipboardPasteAction"
-    },
-    {
         "key": "shift+insert",
         "command": "-editor.action.clipboardPasteAction"
     }
