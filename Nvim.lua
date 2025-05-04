@@ -47,4 +47,3 @@ if vim.g.vscode then
       })
     end, opts)
 end
-
