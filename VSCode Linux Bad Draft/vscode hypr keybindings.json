@@ -715,5 +715,10 @@
     {
         "key": "shift+insert",
         "command": "-editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-vscode-neovim.escape",
+        "when": "editorTextFocus && neovim.init && editorLangId not in 'neovim.editorLangIdExclusions'"
     }
 ]
