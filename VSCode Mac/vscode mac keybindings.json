@@ -804,7 +804,7 @@
     {
         "key": "shift+cmd+d",
         "command": "editor.action.moveSelectionToNextFindMatch",
-        "when": "editorFocus && neovim.mode == 'insert'"
+        "when": "editorFocus && neovim.mode != 'insert'"
     },
     {
         "key": "cmd+k cmd+d",
@@ -815,5 +815,10 @@
         "key": "shift+cmd+d",
         "command": "-workbench.view.debug",
         "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorFocus && neovim.mode == 'insert'"
     }
 ]
