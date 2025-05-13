@@ -1,0 +1,8 @@
+0x17           option back
+0x15           cmd back
+
+0x1b 0x62  option left
+0x01           cmd left
+
+0x1b 0x66  option right
+0x05           cmd right
