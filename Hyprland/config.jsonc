@@ -23,7 +23,7 @@
     ],
 
     "clock": {
-        "format": "<span color='#ffead3'>{:%I:%M %p      %a %d %b}</span>",
+        "format": "<span color='#ffead3'>{:%a %d %b       %I:%M %p}</span>",
         "rotate": 0,
         "tooltip-format": "<span>{calendar}</span>",
         "calendar": {
