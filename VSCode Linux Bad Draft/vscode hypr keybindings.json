@@ -720,5 +720,61 @@
         "key": "ctrl+[",
         "command": "-vscode-neovim.escape",
         "when": "editorTextFocus && neovim.init && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "ctrl+k ctrl+z",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+\\",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "-workbench.action.terminal.focusTabs",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "ctrl+s ctrl+f",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+s ctrl+e",
+        "command": "workbench.action.gotoSymbol",
+        "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
+    },
+    {
+        "key": "ctrl+s d",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+s a",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+s s",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+s w",
+        "command": "workbench.action.navigateUp"
     }
 ]
