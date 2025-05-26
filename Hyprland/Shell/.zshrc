@@ -32,6 +32,7 @@ alias fzf="fzf --bind 'enter:execute(nvim {})'"
 alias ts='sudo timeshift'
 alias nk='kitty $(pwd) &'
 alias open='dolphin'
+alias gpl="git log --pretty=format:'%h %ad %s'"
 
 #  This is your file 
 bindkey '^H' backward-kill-word
