@@ -573,8 +573,7 @@
     },
     {
         "key": "cmd+s cmd+w",
-        "command": "workbench.action.navigateUp",
-        "when": "editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+        "command": "workbench.action.navigateUp"
     },
     {
         "key": "ctrl+w up",
@@ -588,8 +587,7 @@
     },
     {
         "key": "cmd+s cmd+s",
-        "command": "workbench.action.navigateDown",
-        "when": "editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+        "command": "workbench.action.navigateDown"
     },
     {
         "key": "ctrl+w down",
@@ -603,8 +601,7 @@
     },
     {
         "key": "cmd+s cmd+a",
-        "command": "workbench.action.navigateLeft",
-        "when": "editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+        "command": "workbench.action.navigateLeft"
     },
     {
         "key": "ctrl+w left",
@@ -618,8 +615,7 @@
     },
     {
         "key": "cmd+s cmd+d",
-        "command": "workbench.action.navigateRight",
-        "when": "editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+        "command": "workbench.action.navigateRight"
     },
     {
         "key": "ctrl+w right",
@@ -831,5 +827,29 @@
     {
         "key": "cmd+s e",
         "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+; cmd+t",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "gitTreeCompare.openAllChanges"
+    },
+    {
+        "key": "cmd+k cmd+z",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "cmd+o",
+        "command": "gitTreeCompare.openFile",
+        "when": "gitTreeCompare.active"
+    },
+    {
+        "key": "cmd+t",
+        "command": "toggle.diff.renderSideBySide",
+        "when": "inDiffEditor || gitTreeCompare.active"
     }
 ]
