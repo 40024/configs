@@ -15,6 +15,7 @@ vim.opt.scrolloff = 10
 vim.keymap.set('n', 'X', 'dd', { noremap = true, silent = true })
 vim.keymap.set('i', '<C-v>', '<Nop>')
 vim.keymap.set('n', 'W', 'M', { noremap = true })
+vim.keymap.set('n', 'u', '<Nop>', { noremap = true })
 
 vim.api.nvim_create_autocmd('TextYankPost', {
     desc = 'Highlight when yanking (copying) text',
