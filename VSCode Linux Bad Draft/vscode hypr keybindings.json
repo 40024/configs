@@ -780,7 +780,7 @@
     {
         "key": "u",
         "command": "undo",
-        "when": "neovim.mode == 'normal'"
+        "when": "neovim.mode == 'normal' && editorTextFocus"
     },
     {
         "key": "ctrl+j",
