@@ -776,5 +776,10 @@
     {
         "key": "ctrl+s w",
         "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "u",
+        "command": "undo",
+        "when": "neovim.mode == 'normal'"
     }
 ]
