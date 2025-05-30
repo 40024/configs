@@ -778,6 +778,22 @@
         "command": "workbench.action.navigateUp"
     },
     {
+        "key": "ctrl+s ctrl+d",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+s ctrl+a",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+s ctrl+s",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+s ctrl+w",
+        "command": "workbench.action.navigateUp"
+    },
+    {
         "key": "u",
         "command": "undo",
         "when": "neovim.mode == 'normal' && editorTextFocus"
