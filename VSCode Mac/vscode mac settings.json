@@ -100,7 +100,19 @@
       },
     ]
   },
-  "editor.minimap.enabled": false,
   "editor.hover.hidingDelay": 0,
   "editor.hover.sticky": false,
+  "gitTreeCompare.diffMode": "merge",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.dragAndDrop": false,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "window.closeWhenEmpty": true,
+  "chat.agent.enabled": false,
+  "chat.focusWindowOnConfirmation": false,
+  "telemetry.feedback.enabled": false,
+  "editor.minimap.enabled": false,
+  "diffEditor.renderSideBySide": true
 }
