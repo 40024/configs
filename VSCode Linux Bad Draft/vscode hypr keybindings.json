@@ -878,6 +878,6 @@
     {
         "key": "g g",
         "command": "cursorTop",
-        "when": "textInputFocus && neovim.mode = 'normal'"
+        "when": "textInputFocus && neovim.mode == 'normal'"
     }
 ]
