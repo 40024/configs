@@ -261,7 +261,7 @@
         "command": "-actions.findWithSelection"
     },
     {
-        "key": "cmd+; cmd+p",
+        "key": "cmd+; shift+cmd+p",
         "command": "copyRelativeFilePath"
     },
     {
@@ -505,11 +505,11 @@
         "when": "!editorTextFocus"
     },
     {
-        "key": "cmd+; shift+cmd+c",
+        "key": "cmd+; cmd+c",
         "command": "git.commit"
     },
     {
-        "key": "cmd+; shift+cmd+p",
+        "key": "cmd+; cmd+p",
         "command": "git.push"
     },
     {
@@ -740,7 +740,7 @@
         "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
     },
     {
-        "key": "cmd+; cmd+c",
+        "key": "cmd+; shift+cmd+c",
         "command": "notifications.clearAll"
     },
     {
@@ -851,5 +851,44 @@
         "key": "cmd+t",
         "command": "toggle.diff.renderSideBySide",
         "when": "inDiffEditor || gitTreeCompare.active"
+    },
+    {
+        "key": "u",
+        "command": "undo",
+        "when": "editorTextFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "cmd+; shift+alt+cmd+c",
+        "command": "testing.debugAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+; cmd+c",
+        "command": "-testing.debugAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "g r",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && neovim.mode == 'normal'"
+    },
+    {
+        "key": "g d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "g shift+r",
+        "command": "editor.action.referenceSearch.trigger",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && neovim.mode == 'normal'"
+    },
+    {
+        "key": "cmd+; cmd+s",
+        "command": "git.checkout"
+    },
+    {
+        "key": "g g",
+        "command": "cursorTop",
+        "when": "textInputFocus && neovim.mode = 'normal'"
     }
 ]
