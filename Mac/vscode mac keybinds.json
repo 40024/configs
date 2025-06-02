@@ -513,7 +513,7 @@
         "command": "git.push"
     },
     {
-        "key": "cmd+; shift+cmd+d",
+        "key": "cmd+; cmd+d",
         "command": "git.cleanAll"
     },
     {
@@ -889,6 +889,6 @@
     {
         "key": "g g",
         "command": "cursorTop",
-        "when": "textInputFocus && neovim.mode = 'normal'"
+        "when": "textInputFocus && neovim.mode == 'normal'"
     }
 ]
