@@ -58,7 +58,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "cmd+down",
+        "key": "alt+down",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -68,7 +68,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "cmd+up",
+        "key": "alt+up",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -505,14 +505,6 @@
         "when": "!editorTextFocus"
     },
     {
-        "key": "cmd+; cmd+c",
-        "command": "git.commit"
-    },
-    {
-        "key": "cmd+; cmd+p",
-        "command": "git.push"
-    },
-    {
         "key": "cmd+; cmd+d",
         "command": "git.cleanAll"
     },
@@ -890,5 +882,18 @@
         "key": "g g",
         "command": "cursorTop",
         "when": "textInputFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "workbench.action.moveEditorToNewWindow"
+    },
+    {
+        "key": "cmd+k cmd+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+; cmd+c",
+        "command": "workbench.action.toggleCompactAuxiliaryWindow"
     }
 ]
