@@ -845,12 +845,8 @@
     },
     {
         "key": "ctrl+; ctrl+c",
-        "command": "git.commit"
-    },
-    {
-        "key": "ctrl+; ctrl+c",
         "command": "-testing.debugAtCursor",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus" 
     },
     {
         "key": "ctrl+; ctrl+p",
@@ -879,5 +875,13 @@
         "key": "g g",
         "command": "cursorTop",
         "when": "textInputFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "workbench.action.moveEditorToNewWindow"
+    },
+    {
+        "key": "ctrl+; ctrl+c",
+        "command": "workbench.action.toggleCompactAuxiliaryWindow"
     }
 ]
