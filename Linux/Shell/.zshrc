@@ -25,6 +25,12 @@ alias hist='history'
 # Clipboard
 alias pbcopy='wl-copy'
 alias xsel='wl-copy'
+# Git
+alias gc="git add .; git commit -m"
+alias gl="git pull"
+alias gp="git push"
+alias gpl="git log --pretty=format:'%h %ad %s'"
+alias gcp="git add .; git commit -m m; git push"
 # One-offs
 alias n='nvim'
 alias sn='sudo nvim'
@@ -32,7 +38,6 @@ alias fzf="fzf --bind 'enter:execute(nvim {})'"
 alias ts='sudo timeshift'
 alias nk='kitty $(pwd) &'
 alias open='dolphin'
-alias gpl="git log --pretty=format:'%h %ad %s'"
 alias avenv="source venv/bin/activate"
 
 #  This is your file 

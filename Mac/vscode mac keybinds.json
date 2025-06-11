@@ -1,3 +1,5 @@
+
+
 // Place your key bindings in this file to override the defaults
 [
     {
@@ -38,7 +40,7 @@
         "command": "-workbench.action.previousEditor"
     },
     {
-        "key": "shift+cmd+down",
+        "key": "shift+alt+down",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -48,7 +50,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "shift+cmd+up",
+        "key": "shift+alt+up",
         "command": "editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -58,7 +60,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+down",
+        "key": "cmd+down",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -68,7 +70,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+up",
+        "key": "cmd+up",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -505,10 +507,6 @@
         "when": "!editorTextFocus"
     },
     {
-        "key": "cmd+; cmd+d",
-        "command": "git.cleanAll"
-    },
-    {
         "key": "shift+cmd+g shift+cmd+g",
         "command": "workbench.scm.history.focus",
         "when": "view.workbench.scm.visible"
@@ -895,5 +893,50 @@
     {
         "key": "cmd+; cmd+c",
         "command": "workbench.action.toggleCompactAuxiliaryWindow"
+    },
+    {
+        "key": "cmd+; cmd+d",
+        "command": "git.stashIncludeUntracked"
+    },
+    {
+        "key": "alt+h",
+        "command": "-testing.toggleTestingPeekHistory",
+        "when": "testing.isPeekVisible"
+    },
+    {
+        "key": "alt+h",
+        "command": "-editor.action.accessibilityHelpOpenHelpLink",
+        "when": "accessibilityHelpIsShown"
+    },
+    {
+        "key": "shift+cmd+h",
+        "command": "git.viewFileHistory"
+    },
+    {
+        "key": "alt+h",
+        "command": "-git.viewFileHistory"
+    },
+    {
+        "key": "cmd+; shift+cmd+d",
+        "command": "git.cleanAll"
+    },
+    {
+        "key": "cmd+k cmd+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "cmd+k shift+cmd+t",
+        "command": "workbench.action.createTerminalEditorSide"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "deleteWordLeft",
+        "when": "textInputFocus && !editorReadonly"
     }
 ]

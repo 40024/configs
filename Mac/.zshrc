@@ -40,22 +40,29 @@ random_color() {
 # User configuration
 
 # User defined aliases
+# Core
 alias s='sudo'
 alias z='cd'
+# History
 alias h='history'
 alias hist='history'
+# Git
+alias gc='git add .; git commit -m'
+alias gl="git pull"
+alias gp="git push"
+alias gpl="git log --pretty=format:'%h %ad %s'"
+# One-offs
 alias n='nvim'
+alias sn='sudo nvim'
 alias fzf="fzf --bind 'enter:execute(nvim {})'"
 alias scli="python /Users/user/Dev/servo-cli/main.py"
 alias code="/Applications/VSCode.app/Contents/Resources/app/bin/code"
 alias c="clear"
-alias gpl="git log --pretty=format:'%h %ad %s'"
 alias avenv="source venv/bin/activate"
-alias gc="git commit -am"
-alias gp="git push"
+
 
 # Pingm custom script
-pingm() {
+function pingm() {
   if [ "$#" -eq 0 ]; then
     echo "Usage: pinghosts host1 [host2 ...]"
     return 1
