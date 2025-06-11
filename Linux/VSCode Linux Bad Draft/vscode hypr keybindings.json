@@ -883,5 +883,40 @@
     {
         "key": "ctrl+; ctrl+c",
         "command": "workbench.action.toggleCompactAuxiliaryWindow"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+right",
+        "command": "-quickInput.acceptInBackground",
+        "when": "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+; ctrl+d",
+        "command": "git.stashIncludeUntracked"
+    },
+    {
+        "key": "ctrl+; ctrl+shift+d",
+        "command": "git.cleanAll"
+    },
+    {
+        "key": "ctrl+k ctrl+t",
+        "command": "workbench.action.createTerminalEditorSide"
     }
 ]
