@@ -12,6 +12,7 @@ alias a=
 # Core
 alias z='cd'
 alias l='ls'
+alias c='clear'
 # History
 alias h='history'
 # Git
