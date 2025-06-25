@@ -1,16 +1,18 @@
 
 #  Aliases 
 # Important files
-alias d=
-alias t=
+alias d= 
+alias t= 
 alias ta=
+alias m= 
 alias tr=
-alias m=
-alias a=
-alias q=
-alias g=
+alias q= 
+alias g= 
+alias a= 
 # Core
 alias z='cd'
+alias l='ls'
+# History
 alias h='history'
 # Git
 alias gc="git add .; git commit -m"
