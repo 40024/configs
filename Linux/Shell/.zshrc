@@ -39,6 +39,7 @@ alias ts='sudo timeshift'
 alias nk='kitty $(pwd) &'
 alias open='dolphin'
 alias avenv="source venv/bin/activate"
+alias a='python "/home/v/Dev/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
 
 #  This is your file 
 bindkey '^H' backward-kill-word
