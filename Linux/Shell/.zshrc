@@ -20,7 +20,7 @@ alias s='sudo'
 alias p='sudo /usr/local/bin/pacman-names'
 alias z='cd'
 # History
-alias h='history'
+alias h='history | rg'
 alias hist='history'
 # Clipboard
 alias pbcopy='wl-copy'

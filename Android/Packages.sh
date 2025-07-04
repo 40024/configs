@@ -6,3 +6,4 @@ pkg install man
 pkg install zsh
 pkg install fzf
 pkg install python
+pkg install ripgrep

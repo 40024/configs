@@ -44,7 +44,7 @@ random_color() {
 alias s='sudo'
 alias z='cd'
 # History
-alias h='history'
+alias h='history | rg'
 alias hist='history'
 # Git
 alias gc='git add .; git commit -m'
