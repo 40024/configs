@@ -15,11 +15,11 @@
 	"LeetCode Solution": {
 		"prefix": "LC",
 		"body": [
-			"from typing import List"
+			"from typing import List$1"
 			"expected_input = []",
 			"Sol = Solution()",
 			"for valid_input in expected_input:",
-			"    print(Sol.${1:method}(valid_input))",
+			"    print(Sol.${2:method}(valid_input))",
 		],
 		"description": "LeetCode Solution template"
 	}
