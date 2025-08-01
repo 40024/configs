@@ -1,3 +1,6 @@
+# Disable auto update prompt
+DISABLE_UPDATE_PROMPT=true
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -10,6 +13,8 @@ fi
 # we added 2 files to the project structure:
 # 1. ~/.hyde.zshrc - for customizing the shell related hyde configurations
 # 2. ~/.zshenv - for updating the zsh environment variables handled by HyDE // this will be modified across updates
+
+DISABLE_UPDATE_PROMPT=true
 
 #  Plugins 
 # oh-my-zsh plugins are loaded  in ~/.hyde.zshrc file, see the file for more information
@@ -39,7 +44,7 @@ alias ts='sudo timeshift'
 alias nk='kitty $(pwd) &'
 alias open='dolphin'
 alias avenv="source venv/bin/activate"
-alias a='python "/home/v/Dev/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
+alias mcalc='python "/home/v/Documents/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
 
 #  This is your file 
 bindkey '^H' backward-kill-word
