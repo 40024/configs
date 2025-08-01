@@ -3,12 +3,12 @@
     {
         "key": "shift+k",
         "command": "workbench.action.nextEditor",
-        "when": "neovim.mode != 'insert'"
+        "when": "neovim.mode == 'normal'"
     },
     {
         "key": "shift+j",
         "command": "workbench.action.previousEditor",
-        "when": "neovim.mode != 'insert'"
+        "when": "neovim.mode == 'normal'"
     },
     {
         "key": "ctrl+tab",
@@ -199,12 +199,7 @@
     },
     {
         "key": "ctrl+v",
-        "command": "editor.action.pasteAsText"
-    },
-    {
-        "key": "ctrl+v",
-        "command": "editor.action.clipboardPasteAction",
-        "when": "terminalFocus"
+        "command": "editor.action.clipboardPasteAction"
     },
     {
         "key": "ctrl+v",
@@ -628,7 +623,7 @@
     {
         "key": "shift+u",
         "command": "vscode-neovim.ctrl-y",
-        "when": "editorTextFocus && neovim.ctrlKeysNormal.y && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+        "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && neovim.mode != 'replace' && editorLangId not in 'neovim.editorLangIdExclusions'"
     },
     {
         "key": "ctrl+y",
@@ -638,7 +633,7 @@
     {
         "key": "shift+d",
         "command": "vscode-neovim.ctrl-e",
-        "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+        "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && neovim.mode != 'replace' && editorLangId not in 'neovim.editorLangIdExclusions'"
     },
     {
         "key": "ctrl+e",
@@ -727,7 +722,7 @@
         "when": "!isAuxiliaryWindowFocusedContext"
     },
     {
-        "key": "ctrl+\\",
+        "key": "ctrl+=",
         "command": "workbench.action.moveEditorToRightGroup"
     },
     {
@@ -739,7 +734,7 @@
         "command": "-workbench.action.splitEditor"
     },
     {
-        "key": "ctrl+shift+\\",
+        "key": "ctrl+shift+=",
         "command": "workbench.action.moveEditorToLeftGroup"
     },
     {
@@ -830,10 +825,6 @@
         "key": "ctrl+shift+alt+c",
         "command": "-copyRelativeFilePath",
         "when": "!editorFocus"
-    },
-    {
-        "key": "ctrl+shift+=",
-        "command": "workbench.action.zoomIn"
     },
     {
         "key": "ctrl+=",
@@ -995,5 +986,38 @@
         "key": "ctrl+k m",
         "command": "-workbench.action.editor.changeLanguageMode",
         "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+; ctrl+n",
+        "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-extension.advancedNewFile"
+    },
+    {
+        "key": "ctrl+shift+; ctrl+n",
+        "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "ctrl+k ctrl+\\",
+        "command": "-workbench.action.splitEditorRight"
+    },
+    {
+        "key": "ctrl+k ctrl+\\",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "ctrl+\\ e",
+        "command": "-vscode-neovim.send-cmdline",
+        "when": "neovim.init && neovim.mode == 'cmdline'"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.moveEditorToLeftGroup"
     }
 ]
