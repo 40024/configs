@@ -1,8 +1,12 @@
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 ZSH_THEME="agnoster"
+
+# Disable auto update prompt
+DISABLE_UPDATE_PROMPT=true
 
 # Load zsh-autocomplete
 # source ~/.oh-my-zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -50,9 +54,10 @@ alias hist='history'
 alias gc='git add .; git commit -m'
 alias gl="git pull"
 alias gp="git push"
-alias gpl="git log --pretty=format:'%h %ad %s'"
+alias gpl="git log --pretty=format:'%H %ad %s'"
 # One-offs
 alias n='nvim'
+alias e='exit'
 alias sn='sudo nvim'
 alias fzf="fzf --bind 'enter:execute(nvim {})'"
 alias scli="python /Users/user/Dev/servo-cli/main.py"
@@ -83,9 +88,7 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
-#### Added by gr install-tools
-autoload -Uz compinit && compinit
-####
-
 # Load zsh-syntax-highlighting; should be last.
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -z "$TMUX" ] && exec tmux new-session

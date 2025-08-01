@@ -1,5 +1,3 @@
-
-
 // Place your key bindings in this file to override the defaults
 [
     {
@@ -40,7 +38,7 @@
         "command": "-workbench.action.previousEditor"
     },
     {
-        "key": "shift+alt+down",
+        "key": "shift+cmd+down",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -50,7 +48,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "shift+alt+up",
+        "key": "shift+cmd+up",
         "command": "editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -277,7 +275,7 @@
         "when": "!editorFocus"
     },
     {
-        "key": "shift+alt+n",
+        "key": "cmd+; cmd+n",
         "command": "extension.advancedNewFile"
     },
     {
@@ -329,10 +327,6 @@
         "key": "ctrl+b",
         "command": "-vscode-neovim.ctrl-b",
         "when": "editorTextFocus && neovim.ctrlKeysNormal.b && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
-    },
-    {
-        "key": "cmd+; cmd+n",
-        "command": "chatPanelView.newChat"
     },
     {
         "key": "ctrl+l",
@@ -921,7 +915,7 @@
         "command": "git.cleanAll"
     },
     {
-        "key": "cmd+k cmd+t",
+        "key": "cmd+k shift+cmd+t",
         "command": "workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     },
@@ -931,12 +925,36 @@
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     },
     {
-        "key": "cmd+k shift+cmd+t",
+        "key": "cmd+k cmd+t",
         "command": "workbench.action.createTerminalEditorSide"
     },
     {
         "key": "ctrl+backspace",
         "command": "deleteWordLeft",
         "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k cmd+b",
+        "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
+        "key": "cmd+down",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "cmd+up",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
     }
 ]
