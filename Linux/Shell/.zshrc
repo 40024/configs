@@ -51,11 +51,10 @@ bindkey '^H' backward-kill-word
 bindkey '^E' kill-line
 bindkey '^A' backward-kill-line
 
-# Enable vi keybindings for the Z shell
+# Enable vim keybindings
 bindkey -v
-
 # (Optional) Make ESC response snappier
-export KEYTIMEOUT=1indkey -v
+export KEYTIMEOUT=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
