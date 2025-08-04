@@ -13,3 +13,5 @@ unmap <c-y>
 unmap zi
 unmap zo
 unmap z0
+unmap <c-j> # Pref browser side bindings
+unmap <c-k> # Pref browser side bindings
