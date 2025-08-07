@@ -60,3 +60,11 @@ vim.api.nvim_set_keymap('v', 'j', 'h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'k', 'j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'l', 'k', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
+
+-- Normal mode: ; → p, Shift-; (:) → P
+vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
+vim.keymap.set('n', ':', 'P', { noremap = true, silent = true })
+
+-- Visual mode: ; → p, Shift-; (:) → P
+vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
+vim.keymap.set('v', ':', 'P', { noremap = true, silent = true })
