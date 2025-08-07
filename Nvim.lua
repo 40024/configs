@@ -48,3 +48,15 @@ if vim.g.vscode then
       })
     end, opts)
 end
+
+-- Remap hjkl to jklp in normal mode
+vim.api.nvim_set_keymap('n', 'j', 'h', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'k', 'j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'l', 'k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'p', 'l', { noremap = true, silent = true })
+
+-- Remap hjkl to jklp in visual mode
+vim.api.nvim_set_keymap('v', 'j', 'h', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'k', 'j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'l', 'k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
