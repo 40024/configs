@@ -3,15 +3,19 @@ map U scrollFullPageUp
 map D scrollFullPageDown
 map F enterFindMode
 map a enterInsertMode
-map h goBack
-map l goForward
-map H scrollLeft
-map L scrollRight
+
+map j goBack
+map k scrollDown
+map l scrollUp
+map p goForward
+map J scrollLeft
+map P scrollRight
+
 map t createTab
 unmap <c-e>
 unmap <c-y>
 unmap zi
 unmap zo
 unmap z0
-unmap <c-j> # Pref browser side bindings
-unmap <c-k> # Pref browser side bindings
+unmap <c-j>
+unmap <c-k>
