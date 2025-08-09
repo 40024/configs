@@ -7,3 +7,7 @@ pkg install zsh
 pkg install fzf
 pkg install python
 pkg install ripgrep
+pkg install htop
+pkg install mandoc
+pkg install wget
+pkg install unzip
