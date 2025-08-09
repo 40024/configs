@@ -20,6 +20,3 @@ unmap <c-y>
 unmap zi
 unmap zo
 unmap z0
-
-map <c-k> previousTab
-map <c-l> nextTab
