@@ -75,10 +75,13 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {},
+    lualine_b = {}, 
+    lualine_c = {},             
+    lualine_x = {},             
+    lualine_y = {},             
+    lualine_z = {},   
   },
 }
+
+-- Hide default status indicator in favor of lualine
+vim.opt.showmode = false
