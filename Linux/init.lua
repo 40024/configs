@@ -63,8 +63,26 @@ vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
 
 -- Normal mode: ; → p, Shift-; (:) → P
 vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
-vim.keymap.set('n', ':', 'P', { noremap = true, silent = true })
 
 -- Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
-vim.keymap.set('v', ':', 'P', { noremap = true, silent = true })
+
+-- To setup:
+-- mkdir -p ~/.local/share/nvim/site/pack/lualine/start
+-- git clone https://github.com/nvim-lualine/lualine.nvim.git \
+--   ~/.local/share/nvim/site/pack/lualine/start/lualine.nvim
+-- init.lua
+require('lualine').setup {
+  options = {
+    theme = 'gruvbox',
+    globalstatus = true,
+  },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch','diff','diagnostics'},
+    lualine_c = {'filename'},
+    lualine_x = {'encoding','fileformat','filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'},
+  },
+}
