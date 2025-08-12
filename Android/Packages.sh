@@ -11,3 +11,4 @@ pkg install htop
 pkg install mandoc
 pkg install wget
 pkg install unzip
+pkg install qalc
