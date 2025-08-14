@@ -1,12 +1,12 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "shift+k",
+        "key": "shift+l",
         "command": "workbench.action.nextEditor",
         "when": "neovim.mode == 'normal'"
     },
     {
-        "key": "shift+j",
+        "key": "shift+k",
         "command": "workbench.action.previousEditor",
         "when": "neovim.mode == 'normal'"
     },
@@ -157,11 +157,6 @@
     {
         "key": "ctrl+w =",
         "command": "-workbench.action.evenEditorWidths",
-        "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
-    },
-    {
-        "key": "ctrl+w s",
-        "command": "-workbench.action.splitEditorDown",
         "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
     },
     {
@@ -1029,5 +1024,35 @@
         "key": "ctrl+up",
         "command": "workbench.action.compareEditor.previousChange",
         "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "ctrl+w s",
+        "command": "-workbench.action.splitEditorDown",
+        "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+    },
+    {
+        "key": "ctrl+k ctrl+\\",
+        "command": "-workbench.action.splitEditorDown"
+    },
+    {
+        "key": "ctrl+k down",
+        "command": "-workbench.action.moveActiveEditorGroupDown"
+    },
+    {
+        "key": "ctrl+k ctrl+down",
+        "command": "workbench.action.moveActiveEditorGroupDown"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "-editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        "key": "ctrl+shift+k ctrl+shift+d",
+        "command": "workbench.action.moveEditorToAboveGroup"
     }
 ]

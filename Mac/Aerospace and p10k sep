@@ -1,4 +1,4 @@
 on-focus-changed = ["move-mouse window-force-center"]
 
 right segment sep config log
-' \uE0B2
+' \uE0B2'
