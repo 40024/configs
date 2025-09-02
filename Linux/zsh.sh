@@ -40,7 +40,6 @@ random_color() {
 # User configuration
 
 # User defined aliases
-alias scli="python /Users/user/Dev/servo-cli/main.py"
 alias code="/Applications/VSCode.app/Contents/Resources/app/bin/code"
 alias c="clear"
 alias gpl="git log --pretty=format:'%h %ad %s'"
