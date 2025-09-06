@@ -147,6 +147,7 @@ tooltip label {
 #battery {
     color: lighter(@main-color);
     background: transparent;
+    
 }
 
 #memory {
@@ -165,7 +166,6 @@ tooltip label {
 }
 
 #custom-power {
-  color: #ffffff;
-  font-size: 16px;
-  padding: 0 4px;
+  margin: 0 2px;
+  color: white;
 }
