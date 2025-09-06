@@ -12,7 +12,6 @@
     "modules-left": [
         "battery",
         "custom/power",
-        "custom/notifications",
         "tray",
         "custom/padd"
     ],
@@ -29,12 +28,12 @@
             "good": 95,
             "critical": 20
         },
-        "format": "<span color='#ffead3'><b>{capacity}%</b></span>",
+        "format": "{icon}",
+        "format-alt": "<span color='#ffead3'><b>{capacity}%</b></span>",
         "rotate": 0,
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-alt": "{time}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", " "]
     },
 
     "custom/power": {
@@ -48,7 +47,7 @@
     },
 
     "custom/notifications": {
-        "format": "🔊",
+        "format": "Notifications",
         "rotate": 0,
         "on-click": "swaync-client -t"
     },
@@ -102,12 +101,3 @@
     }
 
 }
-
-// positions generated based on config.ctl //
-
-	"modules-left": ["custom/padd","","custom/padd"],
-	"modules-center": ["custom/padd","","custom/padd"],
-	"modules-right": ["custom/padd","","custom/padd"],
-
-
-// sourced from modules based on config.ctl //
