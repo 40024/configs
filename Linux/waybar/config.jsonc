@@ -11,39 +11,46 @@
     ],
     "modules-left": [
         "battery",
-        "privacy",
-        "tray"
+        "custom/power",
+        "custom/notifications",
+        "tray",
+        "custom/padd"
     ],
-
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
+        "privacy",
         "clock"
     ],
 
-    "clock": {
-        "format": "<span color='#ffead3'>{:%a %d %b       %I:%M %p}</span>",
-        "rotate": 0,
-        "tooltip-format": "<span>{calendar}</span>",
-        "calendar": {
-            "mode": "month",
-            "mode-mon-col": 3,
-            "on-scroll": 1,
-            "on-click-right": "mode",
-            "format": {
-                "months": "<span color='#ffead3'><b>{}</b></span>",
-                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#ff6699'><b>{}</b></span>"
-            }
+    "battery": {
+        "states": {
+            "good": 95,
+            "critical": 20
         },
-        "actions": {
-            "on-click-right": "mode",
-            "on-click-forward": "tz_up",
-            "on-click-backward": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
+        "format": "<span color='#ffead3'><b>{capacity}%</b></span>",
+        "rotate": 0,
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "custom/power": {
+        "format": " {}",
+        "rotate": 0,
+        "exec": "echo ; echo  logout",
+        "on-click": "logoutlaunch.sh 2",
+        "on-click-right": "logoutlaunch.sh 1",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+    "custom/notifications": {
+        "format": "🔊",
+        "rotate": 0,
+        "on-click": "swaync-client -t"
     },
 
     "tray": {
@@ -70,18 +77,28 @@
         ]
     },
 
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "<span color='#ffead3'><b>{capacity}%</b></span>",
+    "clock": {
+        "format": "<span color='#ffead3'>{:%a %d %b  %I:%M %p}</span>",
         "rotate": 0,
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        "tooltip-format": "<span>{calendar}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     }
 
 }
@@ -94,4 +111,3 @@
 
 
 // sourced from modules based on config.ctl //
-
