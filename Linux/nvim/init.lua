@@ -67,7 +67,7 @@ vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
 -- Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 
--- Lualine, to setup git clone lualine into share/nvim/...
+-- Lualine, to setup git clone lualine into ~/.local/share/nvim/...
 require('lualine').setup {
   options = {
     theme = 'horizon',

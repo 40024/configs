@@ -1,0 +1,4 @@
+/var/spool/cron/usernamehere
+
+0 22 * * * DISPLAY=:0 XAUTHORITY=/home/usernamehere/.Xauthority /usr/bin/notify-send "Get ready for bed" "Start winding down; Shutdown soon"
+30 22 * * * DISPLAY=:0 XAUTHORITY=/home/usernamehere/.Xauthority /usr/bin/notify-send "Bed time hard cutoff" "Start winding down; Shutdown soon" && sudo /sbin/shutdown -h now
