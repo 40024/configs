@@ -24,7 +24,7 @@
   "script-fail-notify": true,
   "scripts": {
 	"sound-script": {
-	  "exec": "/usr/bin/paplay /usr/share/sounds/freedesktop/stereo/complete.oga",
+	  "exec": "/usr/bin/paplay /usr/share/sounds/freedesktop/stereo/window-attention.oga",
 	  "run-on": "receive"
 	}
   },
