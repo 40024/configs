@@ -1,0 +1,6 @@
+[Unit]
+Description=Set dynamic wallpaper
+
+[Service]
+Type=oneshot
+ExecStart=/home/v/bin/dynamic_wallpaper.py

@@ -20,3 +20,4 @@ unmap <c-y>
 unmap zi
 unmap zo
 unmap z0
+unmap o
