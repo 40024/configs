@@ -1,6 +1,5 @@
 {
   "workbench.colorTheme": "Monokai++ Unified",
-  "window.menuBarVisibility": "toggle",
   "editor.fontSize": 12,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
@@ -39,7 +38,7 @@
   },
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#1073cf2d",
-    "editor.lineHighlightBorder": "#9fced11f"
+    "editor.lineHighlightBorder": "#9fced11f",
   },
   "editor.hover.delay": 0,
   "editor.hover.hidingDelay": 0,
@@ -57,71 +56,82 @@
     "startinsert"
   ],
   "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "constant.other",
-        ],
-        "settings": {
-          "foreground": "#00b7ff"
-        }
-      },
-      {
-        "scope": [
-          "string",
-          "constant.numeric"
-        ],
-        "settings": {
-          "foreground": "#E6DB74"
-        }
-      },
-      {
-        "scope": [
-          "comment"
-        ],
-        "settings": {
-          "foreground": "#6A9955"
-        }
-      },
-      {
-        "scope": [
-          "variable.parameter.function-call",
-        ],
-        "settings": {
-          "foreground": "#eee7e7"
-        }
-      },
-      {
-        "scope": [
-          "meta.function-call",
-        ],
-        "settings": {
-          "foreground": "#d8cdd1"
-        }
-      },
-      {
-        "scope": [
-          "markup.heading",
-        ],
-        "settings": {
-          "foreground": "#569CD6"
-        }
-      },
-      {
-        "scope": [
-          "source.python",
-          "variable.parameter",
-          "meta.function-call",
-        ],
-        "settings": {
-          "foreground": "#49E0FD"
-        }
-      },
-    ]
-  },
-  "workbench.sideBar.location": "right",
+      "textMateRules": [
+        {
+          "scope": [
+            "constant.other",
+          ],
+          "settings": {
+            "foreground": "#00b7ff"
+          }
+        },
+        {
+          "scope": [
+            "string",
+            "constant.numeric"
+          ],
+          "settings": {
+            "foreground": "#E6DB74"
+          }
+        },
+        {
+          "scope": [
+            "comment"
+          ],
+          "settings": {
+            "foreground": "#6A9955"
+          }
+        },
+        {
+          "scope": [
+            "variable.parameter.function-call",
+          ],
+          "settings": {
+            "foreground": "#eee7e7"
+          }
+        },
+        {
+          "scope": [
+            "meta.function-call",
+          ],
+          "settings": {
+            "foreground": "#d8cdd1"
+          }
+        },
+        {
+          "scope": [
+            "source.python",
+            "variable.parameter",
+            "meta.function-call",
+            // "variable.other" // Enable when not working on python, break python
+          ],
+          "settings": {
+            "foreground": "#49E0FD"
+          }
+        },
+        {
+          "scope": [
+            "markup.heading",
+          ],
+          "settings": {
+            "foreground": "#569CD6"
+          }
+        },
+      ]
+    },
   "editor.dragAndDrop": false,
   "git.blame.statusBarItem.enabled": false,
   "editor.selectionClipboard": false,
-  "chat.commandCenter.enabled": false
+  "chat.commandCenter.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 2,
+  "diffEditor.renderSideBySide": true,
+  "workbench.sideBar.location": "right",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "python.languageServer": "Jedi",
+  "explorer.confirmPasteNative": false,
+  "editor.hover.sticky": false,
+  "editor.minimap.enabled": false,
 }
