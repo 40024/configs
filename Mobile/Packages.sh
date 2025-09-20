@@ -7,6 +7,7 @@ apk add git
 apk add openssh
 apk add curl
 apk add wget
+apk add zsh-vcs
 
 apk add man
 apk add fzf
