@@ -1102,5 +1102,15 @@
         "key": "z d",
         "command": "editor.unfoldRecursively",
         "when": "editorTextFocus && foldingEnabled && neovim.mode == 'normal'"
+    },
+    {
+        "key": "z shift+s",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled && neovim.mode == 'normal'"
+    },
+    {
+        "key": "z shift+d",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled && neovim.mode == 'normal'"
     }
 ]
