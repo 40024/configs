@@ -67,7 +67,7 @@ vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
 -- Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 
--- Lualine, to setup git clone lualine into ~/.local/share/nvim/...
+-- Lualine; git clone github.com/nvim-lualine/lualine.nvim.git ~/.local/share/nvim/site/pack/lualine/start/lualine.nvim
 require('lualine').setup {
   options = {
     theme = 'horizon',
@@ -82,6 +82,10 @@ require('lualine').setup {
     lualine_z = {},   
   },
 }
+
+-- Flash; git clone https://github.com/folke/flash.nvim.git ~/.local/share/nvim/site/pack/flash/start/flash.nvim
+require("flash").setup()
+vim.keymap.set("n", "s", function() require("flash").jump() end)
 
 -- Hide default status indicator in favor of lualine
 vim.opt.showmode = false
