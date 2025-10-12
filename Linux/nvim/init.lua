@@ -31,6 +31,12 @@ vim.opt.showmode = false
 ---               Bindings               ---
 --------------------------------------------
 
+-- Yank all
+if not vim.g.vscode then
+  vim.keymap.set('n', '<C-a>', 'maggyG`a', { noremap = true, silent = true })
+  vim.keymap.set('i', '<C-a>', 'maggyG`a', { noremap = true, silent = true })
+end
+
 -- Quick delete
 vim.keymap.set('n', 'X', 'dd', { noremap = true, silent = true })
 
@@ -39,6 +45,8 @@ vim.keymap.set('n', 'u', '<Nop>', { noremap = true })
 
 -- Unbind and rebind visual block
 vim.keymap.set('i', '<C-v>', '<Nop>')
+vim.keymap.set('n', '<S-b>', '<C-v>', { noremap = true, silent = true })
+vim.keymap.set('v', '<S-b>', '<C-v>', { noremap = true, silent = true })
 
 -- Easy indent
 vim.keymap.set('n', '>', '>>', { noremap = true })
@@ -81,36 +89,36 @@ vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 
 -- Highlight yanked text
 vim.api.nvim_create_autocmd('TextYankPost', {
-    desc = 'Highlight when yanking (copying) text',
-    group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-    callback = function()
-        vim.highlight.on_yank()
-    end,
+  desc = 'Highlight when yanking (copying) text',
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
 })
 
 -- Not sure
 if vim.g.vscode then
-    local opts = { silent = true, noremap = true }
+  local opts = { silent = true, noremap = true }
 
-    vim.keymap.set('n', '<C-d>', function()
-      vim.fn['vscode#notify']('editorScroll', {
-        to = 'down',
-        by = 'page',
-        value = 1,
-        revealCursor = true,
-        select = false
-      })
-    end, opts)
+  vim.keymap.set('n', '<C-d>', function()
+    vim.fn['vscode#notify']('editorScroll', {
+      to = 'down',
+      by = 'page',
+      value = 1,
+      revealCursor = true,
+      select = false
+    })
+  end, opts)
 
-    vim.keymap.set('n', '<C-u>', function()
-      vim.fn['vscode#notify']('editorScroll', {
-        to = 'up',
-        by = 'page',
-        value = 1,
-        revealCursor = true,
-        select = false
-      })
-    end, opts)
+  vim.keymap.set('n', '<C-u>', function()
+    vim.fn['vscode#notify']('editorScroll', {
+      to = 'up',
+      by = 'page',
+      value = 1,
+      revealCursor = true,
+      select = false
+    })
+  end, opts)
 end
 
 
