@@ -48,17 +48,18 @@ vim.keymap.set('i', '<C-v>', '<Nop>')
 vim.keymap.set('n', '<S-b>', '<C-v>', { noremap = true, silent = true })
 vim.keymap.set('v', '<S-b>', '<C-v>', { noremap = true, silent = true })
 
--- Easy indent
-vim.keymap.set('n', '>', '>>', { noremap = true })
-vim.keymap.set('v', '>', '>>', { noremap = true })
-vim.keymap.set('n', '<', '<<', { noremap = true })
-vim.keymap.set('v', '<', '<<', { noremap = true })
+-- Easy indent operator pending normal mode hook function
+vim.keymap.set('n', '>', function()
+  vim.cmd('normal! >>')
+end, { noremap = true, silent = true })
 
--- Unbind normal indent as breaks easy indent
-vim.keymap.set('n', '>>', '<Nop>', { noremap = true })
-vim.keymap.set('v', '>>', '<Nop>', { noremap = true })
-vim.keymap.set('n', '<<', '<Nop>', { noremap = true })
-vim.keymap.set('v', '<<', '<Nop>', { noremap = true })
+vim.keymap.set('n', '<', function()
+  vim.cmd('normal! <<')
+end, { noremap = true, silent = true })
+
+-- Easy indent visual mode
+vim.keymap.set('v', '>', '>gv', { noremap = true, silent = true })
+vim.keymap.set('v', '<', '<gv', { noremap = true, silent = true })
 
 --------------------------------------------
 ---          Moonlander Specific         ---
