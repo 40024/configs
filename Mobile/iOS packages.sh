@@ -1,19 +1,10 @@
 
-apk update
-apk add zsh
-apk add tmux
-apk add neovim
-apk add git
-apk add openssh
-apk add curl
-apk add wget
-apk add zsh-vcs
+/etc/apk/repositories
+https://dl-cdn.alpinlinux.org/alpin/v3.20/main
+https://dl-cdn.alpinlinux.org/alpin/v3.20/community
 
-apk add man
-apk add fzf
-apk add python
-apk add ripgrep
-apk add htop
-apk add mandoc
-apk add unzip
-apk add qalc
+apk update
+apk upgrade
+
+apk add zsh tmux neovim git openssh curl wget zsh-vcs
+apk add man fzf python ripgrep htop mandoc unzip qalc
