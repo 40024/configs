@@ -3,8 +3,15 @@
 ---             Phone only               ---
 --------------------------------------------
 
+-- Disable line wrap
+vim.opt.wrap = false
+
+-- Disable line numbers
 vim.opt.number = false
 vim.opt.relativenumber = false
+
+-- Allow touching screen to move cursor
+vim.opt.mouse = 'a'
 
 -- Phone only
 vim.opt.wrap = false
