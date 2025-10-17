@@ -127,7 +127,7 @@ end
 ---                Plugins               ---
 --------------------------------------------
 
--- Lualine; git clone github.com/nvim-lualine/lualine.nvim.git ~/.local/share/nvim/site/pack/lualine/start/lualine.nvim
+-- Lualine; git clone https://github.com/nvim-lualine/lualine.nvim.git ~/.local/share/nvim/site/pack/lualine/start/lualine.nvim
 require('lualine').setup {
   options = {
     theme = 'horizon',
