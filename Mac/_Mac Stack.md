@@ -22,6 +22,4 @@ Manually install Alt-tab (No thumbnails; ++Contrast)
 brew install --cask ueli
 brew install --cask jordanbaird-ice
 
-lazy git
-
 Option instead of ctrl for tab cycling (vivaldi; vscode; etc;)
