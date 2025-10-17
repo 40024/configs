@@ -8,6 +8,8 @@
 - zsh
 - Nvim
 - kitty
+- Nerdfonts (pacman -S nerd-fonts)
+- xsel
 
 ## Window Managers/Desktop Environments
 - Hyperland
