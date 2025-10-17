@@ -1,0 +1,51 @@
+
+# Updates aren't real
+DISABLE_UPDATE_PROMPT=true
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
+#  Aliases for Linux 
+# Clipboard
+alias pbcopy='wl-copy'
+alias xsel='wl-copy'
+# Misc
+alias open='dolphin'
+alias mcalc='python "/home/v/Documents/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
+alias p='sudo /usr/local/bin/pacman-names'
+alias ts='sudo timeshift'
+
+#  General Aliases 
+# General
+alias z='cd'
+alias c='clear'
+alias s='sudo'
+# History
+alias h='history | rg'
+alias hist='history'
+# Git
+alias gc="git add .; git commit -m"
+alias gl="git pull"
+alias gp="git push"
+alias gpl="git log --pretty=format:'%h %ad %s'"
+alias gcp="git add .; git commit -m m; git push"
+# Misc
+alias n='nvim'
+alias sn='sudo nvim'
+alias f="fzf --bind 'enter:execute(nvim {})'"
+alias nk='kitty $(pwd) &'
+alias avenv="source venv/bin/activate"
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Enable vim keybindings
+bindkey -v
+# (Optional) Make ESC response snappier
+export KEYTIMEOUT=1

@@ -36,9 +36,7 @@ random_color() {
   echo ${colors[$RANDOM % ${#colors[@]}]}
 }
 
-
 # User configuration
-
 # User defined aliases
 alias code="/Applications/VSCode.app/Contents/Resources/app/bin/code"
 alias c="clear"
@@ -55,11 +53,6 @@ pingm() {
     ping -c 1 "$host"
   done
 }
-
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 # Enable menu completion for tab key
 autoload -Uz compinit
