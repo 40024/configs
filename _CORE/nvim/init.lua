@@ -26,7 +26,6 @@ vim.opt.inccommand = 'split'
 -- Hide default status indicator in favor of lualine
 vim.opt.showmode = false
 
-
 --------------------------------------------
 ---               Bindings               ---
 --------------------------------------------
@@ -40,8 +39,10 @@ end
 -- Quick delete
 vim.keymap.set('n', 'X', 'dd', { noremap = true, silent = true })
 
--- Unbind undo (bound in VSC to VSC buffer instead of separate buffers)
-vim.keymap.set('n', 'u', '<Nop>', { noremap = true })
+-- Bind to VSC buffer instead of separate buffer
+if vim.g.vscode then
+  vim.keymap.set('n', 'u', '<Nop>', { noremap = true })
+end
 
 -- Unbind and rebind visual block
 vim.keymap.set('i', '<C-v>', '<Nop>')
@@ -60,29 +61,6 @@ end, { noremap = true, silent = true })
 -- Easy indent visual mode
 vim.keymap.set('v', '>', '>gv', { noremap = true, silent = true })
 vim.keymap.set('v', '<', '<gv', { noremap = true, silent = true })
-
---------------------------------------------
----          Moonlander Specific         ---
---------------------------------------------
-
--- Remap hjkl to jklp in normal mode
-vim.api.nvim_set_keymap('n', 'j', 'h', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'k', 'j', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'l', 'k', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'p', 'l', { noremap = true, silent = true })
-
--- Remap hjkl to jklp in visual mode
-vim.api.nvim_set_keymap('v', 'j', 'h', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', 'k', 'j', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', 'l', 'k', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
-
--- Normal mode: ; → p, Shift-; (:) → P
-vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
-
--- Visual mode: ; → p, Shift-; (:) → P
-vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
-
 
 --------------------------------------------
 ---             Functions                ---
@@ -122,7 +100,6 @@ if vim.g.vscode then
   end, opts)
 end
 
-
 --------------------------------------------
 ---                Plugins               ---
 --------------------------------------------
@@ -146,3 +123,25 @@ require('lualine').setup {
 -- Flash; git clone https://github.com/folke/flash.nvim.git ~/.local/share/nvim/site/pack/flash/start/flash.nvim
 require("flash").setup()
 vim.keymap.set("n", "s", function() require("flash").jump() end)
+
+--------------------------------------------
+---          Moonlander Specific         ---
+--------------------------------------------
+
+-- Remap hjkl to jklp in normal mode
+vim.api.nvim_set_keymap('n', 'j', 'h', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'k', 'j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'l', 'k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'p', 'l', { noremap = true, silent = true })
+
+-- Remap hjkl to jklp in visual mode
+vim.api.nvim_set_keymap('v', 'j', 'h', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'k', 'j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'l', 'k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
+
+-- Normal mode: ; → p, Shift-; (:) → P
+vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
+
+-- Visual mode: ; → p, Shift-; (:) → P
+vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
