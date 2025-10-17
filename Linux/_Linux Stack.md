@@ -31,6 +31,7 @@
 - Digikam
 - nwg displays
 - satty
+- feh
 - swww
 
 ## Status Bars
