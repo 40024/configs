@@ -30,6 +30,13 @@ vim.opt.showmode = false
 ---               Bindings               ---
 --------------------------------------------
 
+--------------------------------------------
+---          Linux Only for ToS          ---
+--------------------------------------------
+if not vim.g.vscode then
+  vim.keymap.set('i', 'X', '<C-o>dd', { noremap = true, silent = true })
+end
+
 -- Yank all
 if not vim.g.vscode then
   vim.keymap.set('n', '<C-a>', 'maggyG`a', { noremap = true, silent = true })
