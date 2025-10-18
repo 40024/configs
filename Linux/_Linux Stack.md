@@ -7,7 +7,7 @@
 - wget
 - zsh
 - Nvim
-- kitty
+- kitty, ghostty (nvim dedicated)
 - Nerdfonts (pacman -S nerd-fonts)
 - xsel
 
