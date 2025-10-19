@@ -107,6 +107,16 @@ if vim.g.vscode then
   end, opts)
 end
 
+-- Function to remove line numbers
+function RemoveLineNumbers()
+    vim.wo.relativenumber = false
+    vim.wo.number = false
+end
+-- Binding RemoveLineNumbers to "Tos"
+vim.api.nvim_create_user_command('Tos', RemoveLineNumbers, {} )
+-- Binding RemoveLineNumbers to "tos"
+vim.cmd('cabbrev tos Tos')
+
 --------------------------------------------
 ---                Plugins               ---
 --------------------------------------------
