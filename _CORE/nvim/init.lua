@@ -30,13 +30,6 @@ vim.opt.showmode = false
 ---               Bindings               ---
 --------------------------------------------
 
---------------------------------------------
----          Linux Only for ToS          ---
---------------------------------------------
-if not vim.g.vscode then
-  vim.keymap.set('i', 'X', '<C-o>dd', { noremap = true, silent = true })
-end
-
 -- Yank all
 if not vim.g.vscode then
   vim.keymap.set('n', '<C-a>', 'maggyG`a', { noremap = true, silent = true })
@@ -107,16 +100,6 @@ if vim.g.vscode then
   end, opts)
 end
 
--- Function to remove line numbers
-function RemoveLineNumbers()
-    vim.wo.relativenumber = false
-    vim.wo.number = false
-end
--- Binding RemoveLineNumbers to "Tos"
-vim.api.nvim_create_user_command('Tos', RemoveLineNumbers, {} )
--- Binding RemoveLineNumbers to "tos"
-vim.cmd('cabbrev tos Tos')
-
 --------------------------------------------
 ---                Plugins               ---
 --------------------------------------------
@@ -162,3 +145,29 @@ vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
 
 -- Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
+
+
+--------------------------------------------
+---                ToS                   ---
+--------------------------------------------
+
+-- Function to remove line numbers
+function TownSetup()
+  vim.wo.relativenumber = false
+  vim.wo.number = false
+  -- Lines to insert
+  local lines = {1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15}
+  -- Insert lines at the current cursor position
+  for _, line in ipairs(lines) do
+    vim.api.nvim_put({string.format("%2d -> ", line)}, "l", false, true)
+  end
+end
+vim.api.nvim_create_user_command('Tos', TownSetup, {})
+vim.cmd('cabbrev tos Tos')
+
+
+-- Quick delete ToS
+if not vim.g.vscode then
+  -- Quick delete in insert mode
+  vim.keymap.set('i', 'X', '<Esc>ddi', { noremap = true, silent = true })
+end
