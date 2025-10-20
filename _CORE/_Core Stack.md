@@ -7,4 +7,4 @@ nvim  w config
 Prereq: Nerd fonts
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 
-kitty w config
+kitty (linux)/ghostty (mac) with configs
