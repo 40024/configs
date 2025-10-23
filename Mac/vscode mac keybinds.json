@@ -167,11 +167,6 @@
         "when": "inDebugMode && stepIntoTargetsSupported && debugState == 'stopped'"
     },
     {
-        "key": "alt+q",
-        "command": "workbench.action.debug.stop",
-        "when": "inDebugMode && !focusedSessionIsAttach"
-    },
-    {
         "key": "shift+f5",
         "command": "-workbench.action.debug.stop",
         "when": "inDebugMode && !focusedSessionIsAttach"
@@ -745,27 +740,12 @@
         "command": "gitTreeCompare.openChanges"
     },
     {
-        "key": "shift+cmd+b",
-        "command": "workbench.action.toggleAuxiliaryBar",
-        "when": "config.workbench.layoutControl.type == 'both' && config.workbench.sideBar.location == 'left' || config.workbench.layoutControl.type == 'toggles' && config.workbench.sideBar.location == 'left'"
-    },
-    {
         "key": "shift+cmd+c",
         "command": "git.openChange"
     },
     {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "shift+cmd+d",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus && neovim.mode != 'insert'"
-    },
-    {
-        "key": "shift+cmd+d",
-        "command": "editor.action.moveSelectionToNextFindMatch",
-        "when": "editorFocus && neovim.mode != 'insert'"
     },
     {
         "key": "cmd+k cmd+d",
@@ -776,11 +756,6 @@
         "key": "shift+cmd+d",
         "command": "-workbench.view.debug",
         "when": "viewContainer.workbench.view.debug.enabled"
-    },
-    {
-        "key": "shift+cmd+d",
-        "command": "editor.action.addSelectionToPreviousFindMatch",
-        "when": "editorFocus && neovim.mode == 'insert'"
     },
     {
         "key": "cmd+\\",
@@ -852,17 +827,12 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "g r",
-        "command": "editor.action.goToReferences",
-        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && neovim.mode == 'normal'"
-    },
-    {
         "key": "g d",
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && neovim.mode == 'normal'"
     },
     {
-        "key": "g shift+r",
+        "key": "g r",
         "command": "editor.action.referenceSearch.trigger",
         "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && neovim.mode == 'normal'"
     },
@@ -911,10 +881,6 @@
         "command": "-git.viewFileHistory"
     },
     {
-        "key": "cmd+; shift+cmd+d",
-        "command": "git.cleanAll"
-    },
-    {
         "key": "cmd+k shift+cmd+t",
         "command": "workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
@@ -927,11 +893,6 @@
     {
         "key": "cmd+k cmd+t",
         "command": "workbench.action.createTerminalEditorSide"
-    },
-    {
-        "key": "ctrl+backspace",
-        "command": "deleteWordLeft",
-        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "cmd+k cmd+b",
@@ -956,5 +917,166 @@
         "key": "shift+alt+f5",
         "command": "-workbench.action.compareEditor.previousChange",
         "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "cmd+left",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "-cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorHome"
+    },
+    {
+        "key": "cmd+left",
+        "command": "-cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorEnd"
+    },
+    {
+        "key": "cmd+right",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+right",
+        "command": "cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "-cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "cursorWordEndRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-cursorWordEndRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "cursorWordEndLeftSelect"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "z a",
+        "command": "editor.foldRecursively",
+        "when": "editorTextFocus && foldingEnabled && neovim.mode == 'normal'"
+    },
+    {
+        "key": "cmd+k cmd+[",
+        "command": "-editor.foldRecursively",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "z s",
+        "command": "editor.unfoldRecursively",
+        "when": "editorTextFocus && foldingEnabled && neovim.mode == 'normal'"
+    },
+    {
+        "key": "cmd+k cmd+]",
+        "command": "-editor.unfoldRecursively",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "shift+cmd+s cmd+d",
+        "command": "workbench.action.duplicateActiveEditorGroupRight"
+    },
+    {
+        "key": "shift+cmd+s cmd+a",
+        "command": "workbench.action.duplicateActiveEditorGroupLeft"
+    },
+    {
+        "key": "cmd+k cmd+w",
+        "command": "editor.action.toggleWordWrap"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalHasBeenCreated"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalHasBeenCreated"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+cmd+s cmd+s",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "shift+cmd+s cmd+w",
+        "command": "workbench.action.splitEditorUp"
+    },
+    {
+        "key": "g shift+r",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+d shift+cmd+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "shift+cmd+d cmd+q",
+        "command": "workbench.action.debug.stop",
+        "when": "inDebugMode && !focusedSessionIsAttach"
+    },
+    {
+        "key": "shift+cmd+d cmd+w",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "shift+cmd+d cmd+o",
+        "command": "workbench.action.debug.stepOut",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "shift+cmd+d cmd+r",
+        "command": "workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "shift+cmd+d cmd+s",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
     }
 ]

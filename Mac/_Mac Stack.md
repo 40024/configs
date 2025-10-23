@@ -13,7 +13,7 @@ Lazyvim/P10k instructions inCore
 
 
 ## Interactive stack 
-Vivaldi, Aerospace+Autoraise, Alt-tab, Ueli, Ice
+Vivaldi, Aerospace+Autoraise, Alt-tab, Ueli, Ice, duti
 
 ## Instructions
 Manually install vivaldi
@@ -21,5 +21,6 @@ brew install --cask nikitabobko/tap/aerospace
 Manually install Alt-tab (No thumbnails; ++Contrast)
 brew install --cask ueli
 brew install --cask jordanbaird-ice
+duti -s com.microsoft.VSCode .txt all
 
 Option instead of ctrl for tab cycling (vivaldi; vscode; etc;)

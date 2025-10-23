@@ -246,11 +246,6 @@
         "when": "viewContainer.workbench.view.debug.enabled"
     },
     {
-        "key": "ctrl+shift+d",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus && neovim.mode != 'insert'"
-    },
-    {
         "key": "ctrl+d",
         "command": "-editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
@@ -606,11 +601,6 @@
         "when": "editorFocus && neovim.mode == 'insert'"
     },
     {
-        "key": "ctrl+shift+d",
-        "command": "editor.action.addSelectionToPreviousFindMatch",
-        "when": "editorFocus && neovim.mode == 'insert'"
-    },
-    {
         "key": "ctrl+d",
         "command": "vscode-neovim.ctrl-d",
         "when": "editorFocus && neovim.mode != 'insert'"
@@ -839,17 +829,12 @@
         "command": "git.checkout"
     },
     {
-        "key": "g r",
-        "command": "editor.action.goToReferences",
-        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && neovim.mode == 'normal'"
-    },
-    {
         "key": "g d",
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && neovim.mode == 'normal'"
     },
     {
-        "key": "g shift+r",
+        "key": "g r",
         "command": "editor.action.referenceSearch.trigger",
         "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && neovim.mode == 'normal'"
     },
@@ -1176,5 +1161,54 @@
     {
         "key": "ctrl+k ctrl+\\",
         "command": "-workbench.action.splitEditorUp"
+    },
+    {
+        "key": "g shift+r",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly && neovim.mode == 'normal'"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+s",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+b",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+r",
+        "command": "workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+w",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+q",
+        "command": "workbench.action.debug.stop",
+        "when": "inDebugMode && !focusedSessionIsAttach"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+shift+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+o",
+        "command": "workbench.action.debug.stepOut",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+i",
+        "command": "workbench.action.debug.stepInto",
+        "when": "debugState != 'inactive'"
     }
 ]
