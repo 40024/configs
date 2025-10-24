@@ -3,12 +3,12 @@
     {
         "key": "shift+l",
         "command": "workbench.action.nextEditor",
-        "when": "neovim.mode == 'normal'"
+        "when": "neovim.mode == 'normal' && !terminalFocus"
     },
     {
         "key": "shift+k",
         "command": "workbench.action.previousEditor",
-        "when": "neovim.mode == 'normal'"
+        "when": "neovim.mode == 'normal' && !terminalFocus"
     },
     {
         "key": "ctrl+tab",
@@ -17,10 +17,6 @@
     {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
         "key": "ctrl+alt+b",
@@ -1173,27 +1169,27 @@
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+d ctrl+s",
+        "key": "ctrl+shift+d ctrl+shift+s",
         "command": "workbench.action.debug.start",
         "when": "debuggersAvailable && debugState == 'inactive'"
     },
     {
-        "key": "ctrl+shift+d ctrl+b",
+        "key": "ctrl+shift+d ctrl+shift+b",
         "command": "editor.debug.action.toggleBreakpoint",
         "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
     },
     {
-        "key": "ctrl+shift+d ctrl+r",
+        "key": "ctrl+shift+d ctrl+shift+r",
         "command": "workbench.action.debug.restart",
         "when": "inDebugMode"
     },
     {
-        "key": "ctrl+shift+d ctrl+w",
+        "key": "ctrl+shift+d ctrl+shift+w",
         "command": "workbench.action.debug.stepOver",
         "when": "debugState == 'stopped'"
     },
     {
-        "key": "ctrl+shift+d ctrl+q",
+        "key": "ctrl+shift+d ctrl+shift+q",
         "command": "workbench.action.debug.stop",
         "when": "inDebugMode && !focusedSessionIsAttach"
     },
@@ -1202,13 +1198,23 @@
         "command": "workbench.view.debug"
     },
     {
-        "key": "ctrl+shift+d ctrl+o",
+        "key": "ctrl+shift+d ctrl+shift+o",
         "command": "workbench.action.debug.stepOut",
         "when": "debugState == 'stopped'"
     },
     {
-        "key": "ctrl+shift+d ctrl+i",
+        "key": "ctrl+shift+d ctrl+shift+i",
         "command": "workbench.action.debug.stepInto",
         "when": "debugState != 'inactive'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build",
+        "when": "taskCommandsRegistered"
     }
 ]
