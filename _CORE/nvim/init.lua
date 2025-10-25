@@ -121,7 +121,22 @@ require('lualine').setup {
 }
 
 -- Flash; git clone https://github.com/folke/flash.nvim.git ~/.local/share/nvim/site/pack/flash/start/flash.nvim
-require("flash").setup()
+require("flash").setup({
+  modes = {
+    search = {
+      enabled = true, -- enable during search
+    },
+    char = {
+      enabled = true,
+      jump_labels = true,
+      multi_line = true,
+    },
+    -- make sure operator-pending mode is enabled
+    operator = {
+      enabled = true,
+    },
+  },
+})
 vim.keymap.set("n", "s", function() require("flash").jump() end)
 
 --------------------------------------------
@@ -156,7 +171,7 @@ function TownSetup()
   vim.wo.relativenumber = false
   vim.wo.number = false
   -- Lines to insert
-  local lines = {1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15}
+  local lines = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
   -- Insert lines at the current cursor position
   for _, line in ipairs(lines) do
     vim.api.nvim_put({string.format("%2d -> ", line)}, "l", false, true)
