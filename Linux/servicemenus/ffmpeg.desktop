@@ -1,0 +1,35 @@
+[Desktop Entry]
+Type=Service
+MimeType=image/png;image/jpeg;image/jpg;image/gif;audio/mpeg;video/mp3;video/mp4;
+Actions=png;jpeg;jpg;mp3;mp4;Strip Audio;Strip Video
+X-KDE-ServiceTypes=KFileItemAction
+
+[Desktop Action png]
+Name=Convert PNG
+Exec=ffmpeg -i %f.mp4
+Icon=image-x-generic
+
+[Desktop Action jpg]
+Name=Convert JPG
+Exec=ffmpeg -i %f.mp4
+Icon=image-x-generic
+
+[Desktop Action mp3]
+Name=Convert MP3
+Exec=bash -c 'ffmpeg -i "%f" -acodec libmp3lame -b:a 128k "%f.mp3"'
+Icon=audio-x-generic
+
+[Desktop Action mp4]
+Name=Convert MP4
+Exec=ffmpeg -i %f.mp4
+Icon=video-x-generic
+
+[Desktop Action Strip Audio]
+Name=Strip Audio
+Exec=ffmpeg -i %f -c copy -an %f_muted.mp4
+Icon=video-x-generic
+
+[Desktop Action Strip Video]
+Name=Strip Video
+Exec=ffmpeg -i %f -c copy -vn %f_sound.mp4
+Icon=video-x-generic
