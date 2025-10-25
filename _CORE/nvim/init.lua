@@ -123,21 +123,18 @@ require('lualine').setup {
 -- Flash; git clone https://github.com/folke/flash.nvim.git ~/.local/share/nvim/site/pack/flash/start/flash.nvim
 require("flash").setup({
   modes = {
-    search = {
-      enabled = true, -- enable during search
-    },
-    char = {
-      enabled = true,
-      jump_labels = true,
-      multi_line = true,
-    },
-    -- make sure operator-pending mode is enabled
+    -- Make sure operator-pending mode is enabled
     operator = {
       enabled = true,
     },
   },
 })
 vim.keymap.set("n", "s", function() require("flash").jump() end)
+
+-- Surround; git clone https://github.com/kylechui/nvim-surround ~/.local/share/nvim/site/pack/nvim-surround/start/nvim-surround
+require("nvim-surround").setup({
+    -- Optional: add any custom configuration here
+})
 
 --------------------------------------------
 ---          Moonlander Specific         ---
