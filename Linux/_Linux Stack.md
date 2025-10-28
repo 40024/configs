@@ -36,6 +36,7 @@
 - feh
 - swww
 - wlsunset
+- flameshot
 
 ## Status Bars
 - waybar
