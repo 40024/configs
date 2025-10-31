@@ -1,0 +1,24 @@
+{
+    "label": "lock",
+    "action": "loginctl lock-session",
+    "text": "Lock",
+    "keybind": "w"
+}
+{
+    "label": "shutdown",
+    "action": "/usr/bin/systemctl poweroff",
+    "text": "Shutdown",
+    "keybind": "s"
+}
+{
+    "label": "logout",
+    "action": "/usr/bin/hyprctl dispatch exit 0",
+    "text": "Logout",
+    "keybind": "e"
+}
+{
+    "label": "reboot",
+    "action": "/usr/bin/systemctl reboot",
+    "text": "Reboot",
+    "keybind": "d"
+}
