@@ -135,8 +135,12 @@ require("flash").setup({
 vim.keymap.set("n", "s", function() require("flash").jump() end)
 
 -- Surround; git clone https://github.com/kylechui/nvim-surround ~/.local/share/nvim/site/pack/nvim-surround/start/nvim-surround
-require("nvim-surround").setup({
-    -- Optional: add any custom configuration here
+require('nvim-surround').setup({
+  surrounds = {
+    ['('] = { add = {'(', ')'}},
+    ['['] = { add = {'[', ']'}},
+    ['{'] = { add = {'{', '}'}},
+  }
 })
 
 --------------------------------------------
