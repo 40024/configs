@@ -3,6 +3,9 @@
 ---               General                ---
 --------------------------------------------
 
+-- Wrap (make true on phones)
+vim.opt.wrap = false
+
 -- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
