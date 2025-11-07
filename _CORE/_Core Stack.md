@@ -6,7 +6,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-sy
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-nvim  w config
+nvim with and without config
 git clone https://github.com/LazyVim/starter ~/.config/nvim-lazy
 alias nl='NVIM_APPNAME=nvim-lazy nvim'
 
