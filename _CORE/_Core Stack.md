@@ -8,7 +8,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 nvim with and without config
 git clone https://github.com/LazyVim/starter ~/.config/nvim-lazy
-alias nl='NVIM_APPNAME=nvim-lazy nvim'
 
 kitty (linux)/ghostty (mac) with configs
 vimium on whatever browser you use

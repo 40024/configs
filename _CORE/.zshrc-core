@@ -35,8 +35,9 @@ alias gpl="git log --pretty=format:'%h %ad %s'"
 alias gcp="git add .; git commit -m m; git push"
 # Misc
 alias n='nvim'
+alias nl='NVIM_APPNAME=nvim-lazy nvim'
 alias sn='sudo nvim'
-alias f="fzf --bind 'enter:execute(nvim {})'"
+alias f="fzf --bind 'enter:execute(NVIM_APPNAME=nvim-lazy nvim {})'"
 alias nk='kitty $(pwd) &'
 alias avenv="source venv/bin/activate"
 
