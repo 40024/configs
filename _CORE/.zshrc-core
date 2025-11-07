@@ -37,7 +37,7 @@ alias gcp="git add .; git commit -m m; git push"
 alias n='nvim'
 alias nl='NVIM_APPNAME=nvim-lazy nvim'
 alias sn='sudo nvim'
-alias f="fzf --bind 'enter:execute(NVIM_APPNAME=nvim-lazy nvim {})'"
+alias f='fzf --bind "enter:execute(sh -c '\''NVIM_APPNAME=nvim-lazy nvim {} || nvim {}'\'')+abort"'
 alias nk='kitty $(pwd) &'
 alias avenv="source venv/bin/activate"
 
