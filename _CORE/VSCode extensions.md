@@ -1,0 +1,16 @@
+
+vscode nvim
+
+basedpyright
+ruff
+
+advanced new file
+file utils
+
+git history
+git tree compare
+
+monokai++
+
+python lang support
+python debugger
