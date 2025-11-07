@@ -15,7 +15,7 @@ fi
 # oh-my-zsh plugins are loaded  in ~/.hyde.zshrc file, see the file for more information
 
 # Source zshrc core
-source ~/.zshrc_core
+source ~/.zshrc-core
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
