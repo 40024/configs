@@ -19,9 +19,22 @@ alias mcalc='python "/home/v/Documents/sync-docs/Reference Lists/Food/_Macros/Ca
 alias p='sudo /usr/local/bin/pacman-names'
 alias ts='sudo timeshift'
 
+# CD wrapper
+z() {
+    # Change directory to the specified path
+    cd "$@" || return
+
+    # Try eza with icons first
+    if command -v eza &> /dev/null; then
+        eza -1 --icons
+    # Fallback to ls if eza is not available
+    else
+        ls -1
+    fi
+}
+
 #  General Aliases 
 # General
-alias z='cd'
 alias c='clear'
 alias s='sudo'
 # History
