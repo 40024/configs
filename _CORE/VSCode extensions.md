@@ -14,3 +14,6 @@ monokai++
 
 python lang support
 python debugger
+
+custom css js loader
+animations
