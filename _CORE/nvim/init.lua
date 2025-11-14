@@ -115,11 +115,11 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {}, 
-    lualine_c = {},             
-    lualine_x = {},             
-    lualine_y = {},             
-    lualine_z = {},   
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {},
   },
 }
 
@@ -165,6 +165,14 @@ vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
 -- Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 
+--------------------------------------------
+---            Phone Specific            ---
+--------------------------------------------
+
+-- vim.o.tabstop = 8        -- Number of visual spaces per tab
+-- vim.o.softtabstop = 8    -- Number of spaces to remove when hitting <Tab>
+-- vim.o.shiftwidth = 8     -- Number of spaces to use for each step of (auto)indent
+-- vim.o.expandtab = false   -- Use tabs instead of spaces
 
 --------------------------------------------
 ---                ToS                   ---
