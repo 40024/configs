@@ -17,4 +17,4 @@ python debugger
 
 custom css js loader
 animations
-indenticator #00FFFF
+indenticator #4E8DC2
