@@ -116,7 +116,7 @@
   "telemetry.feedback.enabled": false,
   "diffEditor.renderSideBySide": false,
   "editor.minimap.enabled": false,
-  "python.languageServer": "Default",
+  "python.languageServer": "Pyright",
   "terminal.external.osxExec": "ghostty",
   "terminal.explorerKind": "external",
   "vscode_custom_css.imports": [
