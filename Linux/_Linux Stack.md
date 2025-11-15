@@ -22,6 +22,7 @@
 ## Productivity Apps
 - Rofi
 - Signal
+- gnome-calendar
 
 ## Utility Tools
 - keyd
@@ -33,7 +34,7 @@
 - Digikam
 - nwg displays
 - satty
-- feh
+- loupe
 - swww
 - wlsunset
 
