@@ -23,6 +23,8 @@
 - Rofi
 - Signal
 - gnome-calendar
+- gnome-papers
+- libreoffice
 
 ## Utility Tools
 - keyd
