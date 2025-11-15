@@ -1,3 +1,4 @@
+
 {
   "telemetry.telemetryLevel": "off",
   "workbench.colorTheme": "Monokai++ Unified",
@@ -15,7 +16,6 @@
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "explorer.confirmDelete": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false,
   "files.associations": {
     "*.ptest": "json"
@@ -33,29 +33,13 @@
   "workbench.list.smoothScrolling": true,
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "[markdown]": {
     "editor.foldingStrategy": "indentation"
   },
   "editor.tokenColorCustomizations": {
     "textMateRules": [
-      {
-        "scope": [
-          "constant.other",
-        ],
-        "settings": {
-          "foreground": "#00b7ff"
-        }
-      },
-      {
-        "scope": [
-          "string",
-          "constant.numeric"
-        ],
-        "settings": {
-          "foreground": "#E6DB74"
-        }
-      },
       {
         "scope": [
           "comment"
@@ -84,10 +68,19 @@
         "scope": [
           "source.python",
           "variable.parameter",
-          "meta.function-call",
+          "meta.function-call"
         ],
         "settings": {
           "foreground": "#49E0FD"
+        }
+      },
+      {
+        "scope": [
+          "string",
+          "constant.numeric"
+        ],
+        "settings": {
+          "foreground": "#E6DB74"
         }
       },
       {
@@ -96,6 +89,14 @@
         ],
         "settings": {
           "foreground": "#569CD6"
+        }
+      },
+      {
+        "scope": [
+          "constant.other",
+        ],
+        "settings": {
+          "foreground": "#00b7ff"
         }
       },
     ]
@@ -113,6 +114,19 @@
   "chat.agent.enabled": false,
   "chat.focusWindowOnConfirmation": false,
   "telemetry.feedback.enabled": false,
+  "diffEditor.renderSideBySide": false,
   "editor.minimap.enabled": false,
-  "diffEditor.renderSideBySide": true
+  "python.languageServer": "Default",
+  "terminal.external.osxExec": "ghostty",
+  "terminal.explorerKind": "external",
+  "vscode_custom_css.imports": [
+    "file:///Users/user/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "animations.Default-Duration": 100,
+  "animations.UseCursorColorForCursorAnimation": true,
+  "animations.CursorAnimation": true,
+  "basedpyright.analysis.typeCheckingMode": "basic",
+  "basedpyright.analysis.inlayHints.variableTypes": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "indenticator.color.dark": "#4E8DC2",
 }
