@@ -36,7 +36,6 @@
 - feh
 - swww
 - wlsunset
-- flameshot
 
 ## Status Bars
 - waybar
@@ -49,5 +48,32 @@
 - kpxc
 
 
-## Sort
-ollama
+
+
+keepassxc
+swaync
+hyprland
+neovim
+zsh
+kitty
+btop
+curl
+fastfetch
+fzf
+wget
+easyeffects
+pavucontrol
+pipewire
+rofi
+signal-desktop
+keyd
+yt-dlp
+obs-studio
+digikam
+nwg-displays
+satty
+feh
+swww
+wlsunset
+waybar
+
