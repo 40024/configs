@@ -22,8 +22,8 @@
 ## Productivity Apps
 - Rofi
 - Signal
-- gnome-calendar
-- gnome-papers
+- evolution
+- papers
 - libreoffice
 
 ## Utility Tools
