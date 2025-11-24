@@ -37,6 +37,7 @@
 - nwg displays
 - satty
 - loupe
+- shotcut
 - swww
 - wlsunset
 
