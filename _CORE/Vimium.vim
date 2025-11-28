@@ -1,12 +1,19 @@
 # Insert your preferred key mappings here.
+
+# # Laptop
+# map h goBack
+# map l goForward
+# map j scrollDown
+# map k scrollUp
+
+# Moonlander
 map j goBack
 map p goForward
+map k scrollDown
+map l scrollUp
 
 unmap K
 unmap L
-
-map k scrollDown
-map l scrollUp
 map J scrollLeft
 map P scrollRight
 map U scrollFullPageUp
