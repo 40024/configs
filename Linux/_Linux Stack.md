@@ -50,6 +50,7 @@
 
 ## Password Management
 - kpxc
+- gnome keyring
 
 
 
