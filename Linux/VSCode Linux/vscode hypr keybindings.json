@@ -3,12 +3,12 @@
     {
         "key": "shift+l",
         "command": "workbench.action.nextEditor",
-        "when": "neovim.mode == 'normal' && !terminalFocus"
+        "when": "editorFocus && !filesExplorerFocus && !terminalFocus && neovim.mode == 'normal'"
     },
     {
         "key": "shift+k",
         "command": "workbench.action.previousEditor",
-        "when": "neovim.mode == 'normal' && !terminalFocus"
+        "when": "editorFocus && !filesExplorerFocus && !terminalFocus && neovim.mode == 'normal'"
     },
     {
         "key": "ctrl+tab",
@@ -1216,5 +1216,102 @@
         "key": "ctrl+shift+b",
         "command": "-workbench.action.tasks.build",
         "when": "taskCommandsRegistered"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "git.openChange",
+        "when": "!terminalTextSelectedInFocused"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "-notebook.cell.changeLanguage",
+        "when": "notebookCellEditable && notebookEditable && notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+shift+s ctrl+shift+d",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+shift+s ctrl+d",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "p",
+        "command": "editor.action.scrollRightHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "l",
+        "command": "-editor.action.scrollRightHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "p",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "l",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "-filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "l",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "-list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "j",
+        "command": "-list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "j space",
+        "command": "editor.action.scrollLeftHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "h",
+        "command": "-editor.action.scrollLeftHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "j",
+        "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "h",
+        "command": "-list.collapse",
+        "when": "listFocus && !inputFocus"
     }
 ]
