@@ -1,4 +1,23 @@
 
+## Install
+cfdisk > fdisk
+pacman -Sy && pacman-key --init && pacman -S archlinux-keyring && archinstall
+Install guide https://www.youtube.com/watch?v=2ZSqTQq6BFI
+
+## Install Notes
+PipeWire (Instead of PulseAudio)
+Easy Effects +deps (-Qi easyeffects)
+i3 (backup DM: startx i3)
+Display settings
+
+## Settings
+xdg-settings default-web-browser
+xdg-mime query default text/plain
+proton enable
+KPDB
+~/.config/autostart/signal-desktop.desktop
+nmcli connection import type <type> file <file>
+
 ## Terminal Utilities
 - Btop
 - curl
@@ -13,6 +32,7 @@
 
 ## Window Managers/Desktop Environments
 - Hyperland
+- xrandr --output DP-1 --primary
 
 ## Audio Tools
 - Easyeffects
@@ -20,14 +40,14 @@
 - pipewire
 
 ## Productivity Apps
-- Rofi
+- Rofi (+.local/lib/hyde/rofilaunch.sh --sorting-method fzf)
 - Signal
 - evolution
 - papers
 - libreoffice
 
 ## Utility Tools
-- keyd
+- keyd (+config)
 - qalc
 - ytdlp
 
