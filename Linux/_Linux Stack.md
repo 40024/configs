@@ -1,8 +1,27 @@
 
 ## Install
-cfdisk > fdisk
+iwctl
+station device_name scan
+station device_name get-networks
+station device_name connect "nw"
+station device_name show
+
 pacman -Sy && pacman-key --init && pacman -S archlinux-keyring && archinstall
+
+no subvolumes or home
+
+neovim
+iwd
+git
+ufw
+sbctl
+
+sudo systemctl enable ufw
+
+cfdisk > fdisk
+
 Install guide https://www.youtube.com/watch?v=2ZSqTQq6BFI
+sbctl verify, create-keys, enroll-keys <xyz>, status, verify, sign, verify
 
 ## Install Notes
 PipeWire (Instead of PulseAudio)
