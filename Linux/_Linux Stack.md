@@ -18,6 +18,12 @@ sbctl
 
 sudo systemctl enable ufw
 
+if on surface use custom kernel, https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup install guide and make new file in /boot/loader/entries change title linux initrd
+
+edit kernel modules loading, regenerate kernel image /etc/mkinicpio.conf
+MODULES=(pinctrl_tigerlake surface_aggregator surface_aggregator_registry surface_aggregator_hub surface_hid_core surface_hid surface_kbd intel_lpss_pci 8250_dw)
+sudo mkinitcpio -P
+
 cfdisk > fdisk
 
 Install guide https://www.youtube.com/watch?v=2ZSqTQq6BFI
@@ -120,4 +126,3 @@ feh
 swww
 wlsunset
 waybar
-
