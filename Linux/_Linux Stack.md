@@ -24,10 +24,21 @@ edit kernel modules loading, regenerate kernel image /etc/mkinicpio.conf
 MODULES=(pinctrl_tigerlake surface_aggregator surface_aggregator_registry surface_aggregator_hub surface_hid_core surface_hid surface_kbd intel_lpss_pci 8250_dw)
 sudo mkinitcpio -P
 
-cfdisk > fdisk
+sbctl verify, create-keys, enroll-keys <xyz>, status, verify, sign, verify
 
 Install guide https://www.youtube.com/watch?v=2ZSqTQq6BFI
-sbctl verify, create-keys, enroll-keys <xyz>, status, verify, sign, verify
+
+
+## Post Install
+code as default
+ssh
+keepass
+copy docs/
+
+_Core Stack
+
+.config
+
 
 ## Install Notes
 PipeWire (Instead of PulseAudio)
@@ -101,6 +112,7 @@ nmcli connection import type <type> file <file>
 
 
 keepassxc
+exfatprogs
 swaync
 hyprland
 neovim
