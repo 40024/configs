@@ -1,15 +1,15 @@
 
 ## Post Install
-code as default
-ssh
+hypr keybindings.conf
 keepass
+ssh
 copy docs/
 
 _Core Stack
 
 .config
 kitty config
-hypr keybinds
+lazyvim, autocmds, binds
 
 kpdb
 
@@ -24,3 +24,5 @@ nvim lazy and configs
 p10k config to configs
 vivaldi extensions
 vivaldi keepassxc auth  
+
+setup keyring and mail
