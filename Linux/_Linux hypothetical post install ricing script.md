@@ -5,13 +5,9 @@ keepass
 ssh
 copy docs/
 
-_Core Stack
-
 .config
 kitty config
 lazyvim, autocmds, binds
-
-kpdb
 
 xdg-settings default-web-browser
 xdg-mime query default text/plain
