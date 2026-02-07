@@ -22,3 +22,4 @@ vivaldi extensions
 vivaldi keepassxc auth  
 
 setup keyring and mail
+signal
