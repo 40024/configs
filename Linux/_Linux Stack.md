@@ -138,3 +138,4 @@ feh
 swww
 wlsunset
 waybar
+tmux
