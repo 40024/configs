@@ -1,25 +1,31 @@
 
 ## Post Install
-hypr keybindings.conf
+sudo systemctl enable ufw
+
+keybindings.conf
 keepass
 ssh
-copy docs/
 
-.config
+zsh
+p10k
 kitty config
+
+docs/
+syncd
+
+vimium
+vscode bindings
 lazyvim, autocmds, binds
+vivaldi extensions
+vivaldi keepassxc auth  
 
 xdg-settings default-web-browser
 xdg-mime query default text/plain
-proton enable
 
-Standardize install w an install script ie keyd configs, not sure if it's possible to get default keyboard though
-auto start keyd
-copy zshrc and .zshrc-core
-nvim lazy and configs
-p10k config to configs
-vivaldi extensions
-vivaldi keepassxc auth  
+keyd
+tuta
+dynamic_wallpaper.py
+autostart with userprefs
 
 setup keyring and mail
 signal

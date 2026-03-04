@@ -95,7 +95,7 @@ nmcli connection import type <type> file <file>
 
 
 
-
+# Pacman dep names
 keepassxc
 exfatprogs
 swaync
