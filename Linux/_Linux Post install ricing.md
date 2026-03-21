@@ -1,4 +1,9 @@
 
+-- This should be simplified
+    ie dedupe things like keybindings.conf and kitty, since they're in one dir now
+    and made into a script
+
+
 ## Post Install
 sudo systemctl enable ufw
 
