@@ -4,7 +4,7 @@
     and made into a script
 
 
-## Post Install
+## Post Install Essentials
 sudo systemctl enable ufw
 
 keybindings.conf
