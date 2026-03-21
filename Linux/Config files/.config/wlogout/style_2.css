@@ -34,7 +34,7 @@ button:hover {
     background-size: 25%;
     border-radius: ${active_rad}px;
     animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+    transition: all 9999s cubic-bezier(.55,0.0,.28,1.682);
 }
 
 button:hover#suspend {
