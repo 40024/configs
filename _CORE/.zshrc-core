@@ -17,8 +17,8 @@ alias xsel='wl-copy'
 alias open='dolphin'
 alias q='qalc'
 alias mcalc='python "/home/v/Documents/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
-alias p='/home/v/bin/pacman_names_wrapper.sh'
-alias cal='/home/v/bin/cal_wrapper.sh'
+alias p='/home/v/bin/pacman-names-wrapper.sh'
+alias cal='/home/v/bin/cal-wrapper.sh'
 alias ts='sudo timeshift'
 
 # CD wrapper
@@ -56,6 +56,7 @@ alias f='fzf --bind "enter:execute(sh -c '\''NVIM_APPNAME=nvim-lazy nvim {} || n
 alias nk='kitty $(pwd) &'
 alias avenv="source venv/bin/activate"
 alias lg='lazygit'
+alias py='python'
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"

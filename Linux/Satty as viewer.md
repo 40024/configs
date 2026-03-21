@@ -1,5 +1,5 @@
 Satty has a default desktop file in /usr/share/applications but if it didn't you would do this:
-`cat ~/.local/share/applications/satty-2.desktop`
+`cat ~/.local/share/applications/satty-open.desktop`
 [Desktop Entry]
 Exec=/usr/bin/satty -f
 MimeType=image/png;

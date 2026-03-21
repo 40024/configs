@@ -9,3 +9,4 @@ else
     # Pass all arguments to the original pacman command
     /usr/bin/pacman "$@"
 fi
+

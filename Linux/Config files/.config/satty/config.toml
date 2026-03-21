@@ -44,7 +44,7 @@ right-click-copy = false
 # request no window decoration. Please note that the compositor has the final say in this. At this point. requires xdg-decoration-unstable-v1.
 no-window-decoration = true
 # experimental feature: adjust history size for brush input smooting (0: disabled, default: 0, try e.g. 5 or 10)
-brush-smooth-history-size = 10
+brush-smooth-history-size = 0
 
 # Tool selection keyboard shortcuts (since 0.20.0)
 [keybinds]
@@ -69,11 +69,12 @@ style = "Regular"
 [color-palette]
 # These will be shown in the toolbar for quick selection
 palette = [
-    "#dc143c",    # Red    
-    "#ffd700",    # Yellow 
-    "#008000",    # Green  
+    "#ffffff",  # White
+    "#dc143c",    # Red
+    "#ffd700",    # Yellow
+    "#008000",    # Green
     ]
-    
+
 
 # These will be available in the color picker as presets
 # Leave empty to use GTK's default

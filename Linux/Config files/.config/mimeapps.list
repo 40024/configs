@@ -1,6 +1,3 @@
-[Added Associations]
-image/png=satty-2.desktop;
-
 [Default Applications]
 image/png=org.gnome.Loupe.desktop
 inode/directory=org.kde.dolphin.desktop
@@ -13,9 +10,9 @@ x-scheme-handler/ror2mm=r2modman.desktop
 x-scheme-handler/unknown=vivaldi-stable.desktop
 image/jpeg=org.gnome.Loupe.desktop
 image/gif=org.gnome.Loupe.desktop
-image/jpg=feh.desktop
+image/jpg=org.gnome.Loupe.desktop
 text/xml=nvim.desktop
-image/heic=feh.desktop
+image/heic=org.gnome.Loupe.desktop
 x-scheme-handler/tuta=tutanota-desktop.desktop
 video/mp4=mpv.desktop
 video/webp=mpv.desktop
@@ -23,3 +20,9 @@ application/pdf=org.gnome.Papers.desktop
 image/bmp=org.gnome.Loupe.desktop
 image/tiff=org.gnome.Loupe.desktop
 x-scheme-handler/mailto=tutanota-desktop.desktop
+video/mov=mpv.desktop
+x-scheme-handler/sgnl=signal.desktop
+x-scheme-handler/signalcaptcha=signal.desktop
+audio/x-mra=mpv.desktop
+audio/x-m4a=mpv.desktop
+video/webm=mpv.desktop

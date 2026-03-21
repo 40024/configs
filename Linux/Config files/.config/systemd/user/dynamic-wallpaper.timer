@@ -2,7 +2,7 @@
 Description=Run dynamic wallpaper every minute
 
 [Timer]
-OnBootSec=1min
+OnBootSec=1s
 OnUnitActiveSec=1min
 Persistent=true
 

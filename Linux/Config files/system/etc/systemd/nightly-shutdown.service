@@ -1,0 +1,7 @@
+[Unit]
+Description=Nightly Shutdown
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/shutdown now
+
