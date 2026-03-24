@@ -56,7 +56,7 @@ alias f='fzf --bind "enter:execute(sh -c '\''NVIM_APPNAME=nvim-lazy nvim {} || n
 alias nk='kitty $(pwd) &'
 alias avenv="source venv/bin/activate"
 alias lg='lazygit'
-alias py='python'
+alias py='python3'
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
