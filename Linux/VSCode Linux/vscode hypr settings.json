@@ -127,7 +127,7 @@
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "toggle",
-  "python.languageServer": "Jedi",
+  "python.languageServer": "Default",
   "explorer.confirmPasteNative": false,
   "editor.hover.sticky": false,
   "chat.commandCenter.enabled": false,
