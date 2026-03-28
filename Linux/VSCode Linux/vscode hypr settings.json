@@ -49,7 +49,6 @@
   "workbench.settings.applyToAllProfiles": [],
   "zenMode.fullScreen": false,
   "editor.lineNumbers": "relative",
-  "files.autoSave": "afterDelay",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "strict",
   "vscode-neovim.afterInitConfig": [
@@ -127,10 +126,20 @@
   "diffEditor.renderSideBySide": true,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.layoutControl.enabled": false,
-  "window.menuBarVisibility": "compact",
+  "window.menuBarVisibility": "toggle",
   "python.languageServer": "Jedi",
   "explorer.confirmPasteNative": false,
   "editor.hover.sticky": false,
-  "editor.minimap.enabled": false,
   "chat.commandCenter.enabled": false,
+  "apc.imports": [
+    "file:///home/v/.vscode-oss/extensions/brandonkirbyson.vscode-animations-2.0.1-universal/dist/updateHandler.js"
+  ],
+  "animations.CursorAnimation": true,
+  "files.autoSave": "afterDelay",
+  "indenticator.color.dark": "#4E8DC2",
+  "workbench.startupEditor": "none",
+  "chat.disableAIFeatures": true,
+  "basedpyright.analysis.typeCheckingMode": "off",
+  "basedpyright.analysis.inlayHints.variableTypes": false,
+  "basedpyright.analysis.inlayHints.genericTypes": false,
 }
