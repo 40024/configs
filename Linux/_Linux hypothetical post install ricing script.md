@@ -21,6 +21,7 @@ nvim lazy and configs
 p10k config to configs
 vivaldi extensions
 vivaldi keepassxc auth
+vscode settings and theme
 
 setup keyring and mail
 signal
