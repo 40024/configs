@@ -20,7 +20,7 @@ copy zshrc and .zshrc-core
 nvim lazy and configs
 p10k config to configs
 vivaldi extensions
-vivaldi keepassxc auth  
+vivaldi keepassxc auth
 
 setup keyring and mail
 signal
