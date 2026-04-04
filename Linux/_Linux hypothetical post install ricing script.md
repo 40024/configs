@@ -7,6 +7,7 @@ copy docs/
 
 .config
 kitty config
+keyd unit start
 lazyvim, autocmds, binds
 
 xdg-settings default-web-browser

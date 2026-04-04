@@ -5,9 +5,9 @@ map l goForward
 map j scrollDown
 map k scrollUp
 
+unmap J
 unmap K
-unmap L
-map J scrollLeft
+map H scrollLeft
 map P scrollRight
 map U scrollFullPageUp
 map D scrollFullPageDown
