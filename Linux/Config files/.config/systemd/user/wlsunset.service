@@ -1,0 +1,23 @@
+[Unit]
+Description=Wlsunset Blue Light Filter
+Documentation=https://sr.ht/~kennylevinsen/wlsunset/
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/wlsunset -l 37.3349 -L -122.0090 \
+  -t 1900 -T 6500 \
+  -g 1.0 \
+  -d 1800
+
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+Environment=WAYLAND_DISPLAY=wayland-1
+Environment=DISPLAY=:1
+Environment=UID=1000
+
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target

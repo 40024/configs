@@ -1,0 +1,10 @@
+[Unit]
+Description=Trigger 9:00 PM notification
+
+[Timer]
+OnCalendar=*-*-* 21:00:00
+Persistent=true
+Unit=notify_9.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description= Make DP-1 primary
+
+[Service]
+Type=simple
+ExecStart= /usr/bin/monitor-primary.sh
+
+[Install]
+WantedBy=multi-user.target

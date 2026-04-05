@@ -1,0 +1,6 @@
+[Unit]
+Description=Desktop notification at 9:00 PM
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/notify-send "9:00" "Tie loose ends\nD B+1"

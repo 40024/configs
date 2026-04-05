@@ -1,0 +1,6 @@
+[Unit]
+Description=Desktop notification at 9:30 PM
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/notify-send "9:30" "Last graceful call"

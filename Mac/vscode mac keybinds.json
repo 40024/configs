@@ -719,7 +719,7 @@
         "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
     },
     {
-        "key": "cmd+; shift+cmd+c",
+        "key": "cmd+; shift+cmd+n",
         "command": "notifications.clearAll"
     },
     {
@@ -991,10 +991,6 @@
         "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "shift+cmd+s cmd+d",
-        "command": "workbench.action.duplicateActiveEditorGroupRight"
-    },
-    {
         "key": "shift+cmd+s cmd+a",
         "command": "workbench.action.duplicateActiveEditorGroupLeft"
     },
@@ -1085,27 +1081,70 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "alt+backspace",
+        "key": "cmd+backspace",
         "command": "deleteAllLeft"
     },
     {
-        "key": "cmd+backspace",
+        "key": "alt+backspace",
         "command": "deleteWordLeft",
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "alt+backspace",
-        "command": "-deleteWordLeft",
-        "when": "textInputFocus && !editorReadonly"
+        "key": "shift+cmd+z",
+        "command": "workbench.view.extension.chatPanel"
     },
     {
-        "key": "shift+u",
-        "command": "editor.action.transformToUppercase",
-        "when": "neovim.mode == 'visual'"
+        "key": "shift+cmd+z",
+        "command": "-redo"
     },
     {
-        "key": "u",
-        "command": "editor.action.transformToLowercase",
-        "when": "neovim.mode == 'visual'"
+        "key": "cmd+k cmd+0",
+        "command": "-editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "z shift+a",
+        "command": "editor.foldLevel1",
+        "when": "editorTextFocus && foldingEnabled && neovim.mode == 'normal'"
+    },
+    {
+        "key": "z shift+s",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled && neovim.mode == 'normal'"
+    },
+    {
+        "key": "cmd+; shift+cmd+c",
+        "command": "-testing.coverageAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+; shift+cmd+c",
+        "command": "pr.collapseAllComments"
+    },
+    {
+        "key": "shift+cmd+s shift+cmd+d",
+        "command": "workbench.action.splitEditorToRightGroup"
+    },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b\r"
+        },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+d shift+cmd+w",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "shift+cmd+d shift+cmd+r",
+        "command": "workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "shift+cmd+s cmd+d",
+        "command": "workbench.action.splitEditorToRightGroup"
     }
 ]
