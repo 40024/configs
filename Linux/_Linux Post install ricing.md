@@ -14,6 +14,7 @@ ssh
 zsh
 p10k
 kitty config
+keyd unit start
 
 docs/
 syncd
@@ -23,6 +24,7 @@ vscode bindings
 lazyvim, autocmds, binds
 vivaldi extensions
 vivaldi keepassxc auth  
+vscode settings and theme
 
 xdg-settings default-web-browser
 xdg-mime query default text/plain
