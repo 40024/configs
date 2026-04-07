@@ -5,7 +5,7 @@ station device_name get-networks
 station device_name connect "nw"
 station device_name show
 
-pacman -Sy && pacman-key --init && pacman -S archlinux-keyring && archinstall
+pacman -Syu && pacman-key --init && pacman -S archlinux-keyring && archinstall
 
 no subvolumes or home
 
