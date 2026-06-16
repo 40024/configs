@@ -17,8 +17,9 @@ alias xsel='wl-copy'
 alias open='dolphin'
 alias q='qalc'
 alias mcalc='python "/home/v/Documents/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
-alias p='/home/v/bin/pacman-names-wrapper.sh'
-alias cal='/home/v/bin/cal-wrapper.sh'
+alias p='/home/v/bin/pacman_names_wrapper.sh'
+alias cal='/home/v/bin/cal_wrapper.sh'
+alias ical='py /home/v/bin/ical.py'
 alias ts='sudo timeshift'
 
 # CD wrapper
