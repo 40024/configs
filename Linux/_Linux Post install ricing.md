@@ -23,8 +23,13 @@ vimium
 vscode bindings
 lazyvim, autocmds, binds
 vivaldi extensions
-vivaldi keepassxc auth  
+vivaldi keepassxc auth
 vscode settings and theme
+~/bin
+    custom scripts
+        cal_wrapper.sh  dh.py  ical.py  pacman_names_wrapper.sh  sink_combine.py
+    service
+        dynamic_wallpaper.py
 
 xdg-settings default-web-browser
 xdg-mime query default text/plain
