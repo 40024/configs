@@ -13,14 +13,17 @@ fi
 # Clipboard
 alias pbcopy='wl-copy'
 alias xsel='wl-copy'
-# Misc
+# Shortcuts for existing
 alias open='dolphin'
 alias q='qalc'
-alias mcalc='python "/home/v/Documents/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
-alias p='/home/v/bin/pacman_names_wrapper.sh'
-alias cal='/home/v/bin/cal_wrapper.sh'
-alias ical='py /home/v/bin/ical.py'
 alias ts='sudo timeshift'
+# My ~/bin scripts
+alias cal='/home/v/bin/cal_wrapper.sh'
+alias dh='python /home/v/bin/dh.py'
+alias ical='python /home/v/bin/ical.py'
+alias p='/home/v/bin/pacman_names_wrapper.sh'
+alias sink_combine='python /home/v/bin/sink_combine.py'
+alias mcalc='python "/home/v/Documents/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
 
 # CD wrapper
 z() {
@@ -57,7 +60,7 @@ alias f='fzf --bind "enter:execute(sh -c '\''NVIM_APPNAME=nvim-lazy nvim {} || n
 alias nk='kitty $(pwd) &'
 alias avenv="source venv/bin/activate"
 alias lg='lazygit'
-alias py='python3'
+alias py='python'
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"

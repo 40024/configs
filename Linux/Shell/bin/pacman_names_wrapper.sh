@@ -1,0 +1,1 @@
+/home/v/Dev/Pacman-Names-Wrapper/pacman_names_wrapper.sh

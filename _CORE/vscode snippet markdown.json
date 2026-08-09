@@ -21,7 +21,7 @@
 	// 	"exclude": ["**/temp/*.ts"],
 	// 	"description": "Insert test block"
 	// }
-	"Daily Template": {
+	"Daily Todo Template": {
 		"prefix": "dt",
 		"body": [
 			"# $1",
@@ -35,6 +35,64 @@
 			"    Nightly",
 			"",
 		],
-		"description": "Todo list daily snippet with hooks"
+		"description": "Daily todo list snippet with hooks"
+	},
+	"Weekly Monthly Template": {
+		"prefix": "wmr",
+		"body": [
+			"",
+			"# Summary",
+			"",
+			"",
+			"",
+			"",
+			"# Change",
+			"",
+			"",
+			"",
+			"",
+			"# Knowledge",
+			"",
+			"",
+			"",
+			"",
+			"# Positive / Accomplishments",
+			"",
+			"",
+			"",
+			"",
+			"# Tasks / Expectations",
+			"",
+		],
+		"description": "Weekly monthly reflection template"
+	},
+	"Daily Highlight Template": {
+		"prefix": "dh",
+		"body": [
+			"",
+			"# Diff",
+			"",
+			"",
+			"",
+			"",
+			"# Summary",
+			"",
+			"",
+			"",
+			"",
+			"# Change",
+			"",
+			"",
+			"",
+			"",
+			"# Knowledge",
+			"",
+			"",
+			"",
+			"",
+			"# Positive / Accomplishments",
+			"",
+		],
+		"description": "Daily highlight template"
 	}
 }
