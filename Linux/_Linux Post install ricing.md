@@ -28,7 +28,7 @@ vscode settings and theme
 ~/bin
     custom scripts
         cal_wrapper.sh  dh.py  ical.py  pacman_names_wrapper.sh  sink_combine.py
-    service
+    service (should it really live here ?)
         dynamic_wallpaper.py
 
 xdg-settings default-web-browser
