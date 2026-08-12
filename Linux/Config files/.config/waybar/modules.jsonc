@@ -1,12 +1,8 @@
 {
 	"hyprland/workspaces": {
-        "format": "{icon}",
+        "format": "{name}",
         "on-click": "activate",
-        "all-outputs": true,
-        "format-icons": {
-        "default": "󰫣 ",
-        "active": "󰫢 "
-		}
+        "all-outputs": true
 	},
 
 	"clock": {
@@ -44,7 +40,7 @@
 		"format-linked": "{ifname} (No IP)",
 		"format-disconnected": "󰖪 ",
         "on-click": "exec ~/.config/rofi/assets/wifimenu --rofi -s",
-        "tooltip-format":"Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>"	
+        "tooltip-format":"Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>"
     },
 
 	"bluetooth": {
@@ -77,4 +73,3 @@
         ]
     }
 }
-
