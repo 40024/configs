@@ -33,6 +33,10 @@ tooltip label {
     margin-bottom: 4px;
 }
 
+#workspaces button label {
+    font-size: 17px;
+}
+
 #workspaces button {
     padding: 0px;
     color: alpha(@foreground, 0.5);
