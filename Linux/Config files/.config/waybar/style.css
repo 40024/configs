@@ -5,7 +5,7 @@
 * {
     border: none;
     border-radius: 0px;
-    font-family: "Ndot55, DepartureMono Nerd Font";
+    font-family: "Noto Sans CJK KR";
     font-weight: bold;
     font-size: 15px;
     min-height: 0;
@@ -142,12 +142,12 @@ tooltip label {
 #bluetooth {
     color: lighter(@main-color);
     background: transparent;
-} 
+}
 
 #battery {
     color: lighter(@main-color);
     background: transparent;
-    
+
 }
 
 #memory {
@@ -156,7 +156,7 @@ tooltip label {
 }
 
 #calendar {
-    font-family: "Ndot55, DepartureMono Nerd Font";
+    font-family: "DepartureMono Nerd Font";
 }
 
 #custom-notifications {
