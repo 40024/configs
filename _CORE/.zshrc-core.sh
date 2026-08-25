@@ -4,9 +4,9 @@ DISABLE_UPDATE_PROMPT=true
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+    export EDITOR='vim'
 else
-  export EDITOR='nvim'
+    export EDITOR='nvim'
 fi
 
 #  Aliases for Linux 
@@ -39,6 +39,11 @@ z() {
     else
         ls -1
     fi
+}
+
+# Cat dir
+catdir() {
+    for file in *; do [ -f "$file" ] || continue; printf '\e[36m=== %s ===\e[0m\n' "$file"; cat -- "$file"; echo; done
 }
 
 #  General Aliases 
