@@ -20,6 +20,8 @@ alias ts='sudo timeshift'
 # My ~/bin scripts
 alias cal='/home/v/bin/cal_wrapper.sh'
 alias dh='python /home/v/bin/dh.py'
+alias dhp='python /home/v/bin/dhp.py'
+alias wh='python /home/v/bin/wh.py'
 alias ical='python /home/v/bin/ical.py'
 alias p='/home/v/bin/pacman_names_wrapper.sh'
 alias sink_combine='python /home/v/bin/sink_combine.py'
