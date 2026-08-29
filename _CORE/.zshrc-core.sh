@@ -25,7 +25,7 @@ alias wh='python /home/v/bin/wh.py'
 alias ical='python /home/v/bin/ical.py'
 alias p='/home/v/bin/pacman_names_wrapper.sh'
 alias sink_combine='python /home/v/bin/sink_combine.py'
-alias mcalc='python "/home/v/Documents/sync-docs/Reference Lists/Food/_Macros/Calculator/macro_calculator.py"'
+alias mcalc='python "/home/v/Documents/sync-docs/Obsidian Vault/Food/_Macros/Calculator/macro_calculator.py"'
 
 # CD wrapper
 z() {
