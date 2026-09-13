@@ -703,10 +703,6 @@
         "command": "workbench.action.moveEditorToRightGroup"
     },
     {
-        "key": "ctrl+k ctrl+\\",
-        "command": "workbench.action.splitEditor"
-    },
-    {
         "key": "ctrl+\\",
         "command": "-workbench.action.splitEditor"
     },
@@ -814,7 +810,7 @@
     {
         "key": "ctrl+; ctrl+c",
         "command": "-testing.debugAtCursor",
-        "when": "editorTextFocus" 
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+; ctrl+p",
@@ -976,7 +972,7 @@
         "command": "-workbench.action.splitEditorRight"
     },
     {
-        "key": "ctrl+k ctrl+\\",
+        "key": "ctrl+shift+s ctrl+shift+d",
         "command": "workbench.action.splitEditorRight"
     },
     {
@@ -1242,10 +1238,6 @@
         "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
-        "key": "ctrl+shift+s ctrl+shift+d",
-        "command": "workbench.action.splitEditor"
-    },
-    {
         "key": "ctrl+shift+s ctrl+d",
         "command": "workbench.action.splitEditor"
     },
@@ -1313,5 +1305,28 @@
         "key": "h",
         "command": "-list.collapse",
         "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+s ctrl+shift+s",
+        "command": "workbench.action.moveEditorToNewWindow",
+        "when": "activeEditor"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "leetcode.submitSolution"
+    },
+    {
+        "key": "ctrl+l ctrl+s",
+        "command": "leetcode.searchProblem"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
     }
 ]
