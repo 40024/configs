@@ -29,6 +29,9 @@ vim.opt.inccommand = 'split'
 -- Hide default status indicator in favor of lualine
 vim.opt.showmode = false
 
+-- No comment continuation
+vim.opt.formatoptions:remove({ "c", "r", "o" })
+
 --------------------------------------------
 ---               Bindings               ---
 --------------------------------------------
