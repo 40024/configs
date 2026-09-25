@@ -18,3 +18,6 @@ python debugger
 custom css js loader
 animations
 indenticator #4E8DC2
+
+cpptools
+vscode-arduino
