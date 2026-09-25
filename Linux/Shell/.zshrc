@@ -1,3 +1,4 @@
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -14,8 +15,21 @@ fi
 #  Plugins 
 # oh-my-zsh plugins are loaded  in ~/.hyde.zshrc file, see the file for more information
 
-# Source zshrc core
+# Desktop specific config
+alias nl='NVIM_APPNAME=nvim-lazy nvim'
+alias dynamic_wallpaper='python /home/v/bin/dynamic_wallpaper.py'
+esp() {
+    arduino-cli compile --fqbn esp32:esp32:esp32 . &&
+    arduino-cli upload --fqbn esp32:esp32:esp32 --port /dev/ttyUSB0 .
+}
+
+# Source main config
 source ~/.zshrc-core
+
+# Android studio stuff
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
