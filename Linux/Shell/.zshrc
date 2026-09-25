@@ -18,10 +18,6 @@ fi
 # Desktop specific config
 alias nl='NVIM_APPNAME=nvim-lazy nvim'
 alias dynamic_wallpaper='python /home/v/bin/dynamic_wallpaper.py'
-esp() {
-    arduino-cli compile --fqbn esp32:esp32:esp32 . &&
-    arduino-cli upload --fqbn esp32:esp32:esp32 --port /dev/ttyUSB0 .
-}
 
 # Source main config
 source ~/.zshrc-core
