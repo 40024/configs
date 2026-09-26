@@ -1,1 +1,0 @@
-/home/v/Dev/iCal/ical.py
