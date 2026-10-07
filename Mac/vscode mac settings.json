@@ -136,4 +136,5 @@
   "terminal.integrated.suggest.enabled": false,
   "githubPullRequests.createOnPublishBranch": "never",
   "editor.minimap.enabled": false,
+  "workbench.experimental.modernUI": false,
 }
