@@ -32,7 +32,6 @@ dnsmasq
 docker
 docker-compose
 dolphin
-doublecmd-qt6
 efibootmgr
 esptool
 ex-vi-compat
@@ -50,7 +49,6 @@ flatpak
 fluent-reader
 fzf
 geoip
-ghostty
 gimp
 git
 gnome-calendar
@@ -69,7 +67,6 @@ hyprpicker
 hyprsunset
 ifuse
 imagemagick
-instagram-cli
 intel-ucode
 inxi
 iptables
@@ -88,6 +85,7 @@ kvantum
 kvantum-qt5
 lazygit
 less
+lib32-nvidia-580xx-utils
 libnotify
 libpulse
 libqalculate
@@ -108,14 +106,12 @@ mariadb
 mda.lv2
 mesa-utils
 mpvpaper
-nano
 ncdu
 neovim
 net-tools
 network-manager-applet
 networkmanager
 nftables
-nnn
 nodejs
 noto-fonts-emoji
 npm
@@ -125,7 +121,6 @@ nvm
 nwg-displays
 nwg-look
 obs-studio
-ollama
 otf-aurulent-nerd
 otf-codenewroman-nerd
 otf-comicshanns-nerd
@@ -150,7 +145,6 @@ pipewire-pulse
 platformio-core
 polkit-gnome
 polkit-kde-agent
-pomodorolm-bin
 powertop
 preload
 projectm-sdl
@@ -171,7 +165,6 @@ qt5ct
 qt6-wayland
 qt6ct
 r2modman-bin
-ranger
 reflector
 rofi
 ruff
@@ -184,7 +177,6 @@ signal-desktop
 slurp
 smartmontools
 sof-firmware
-solanum
 starship
 steam
 strace
@@ -284,8 +276,6 @@ yay
 yay-debug
 ydotool
 yt-dlp
-yt-x-git
-ytfzf
 zram-generator
 zsh
 zsh-theme-powerlevel10k-git
