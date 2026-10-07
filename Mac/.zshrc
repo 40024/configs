@@ -94,6 +94,7 @@ source ~/.zshrc-core
 alias ips="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}' "
 alias code="/Applications/VSCode.app/Contents/Resources/app/bin/code"
 alias scli="python /Users/user/Dev/servo-cli/main.py"
+alias tmux-start="~/bin/tmux-start.sh"
 
 # Pingm custom script
 function pingm() {
