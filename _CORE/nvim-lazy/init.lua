@@ -158,12 +158,15 @@ vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 -- vim.o.tabstop = 4        -- Number of visual spaces per tab
 -- vim.o.softtabstop = 4    -- Number of spaces to remove when hitting <Tab>
 -- vim.o.shiftwidth = 4     -- Number of spaces to use for each step of (auto)indent
--- vim.o.expandtab = false   -- Use tabs instead of spaces
+-- vim.o.expandtab = true   -- Use tabs instead of spaces
+
+-- vim.opt.autoindent = true
+-- vim.opt.indentexpr = ""
 
 -- vim.opt.relativenumber = false  -- Set relative line numbering to false
 -- vim.opt.number = false           -- Set absolute line numbering to false
 
--- Unblock markdown nested indents
+-- -- Unblock markdown nested indents
 -- vim.api.nvim_create_autocmd("FileType", {
 --   pattern = "markdown",
 --   callback = function()
