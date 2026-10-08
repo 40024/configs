@@ -153,8 +153,8 @@ vim.keymap.set("n", "s", function() require("flash").jump() end)
 --     component_separators = '',
 --   },
 --   sections = {
---     lualine_a = {'mode'},
---     lualine_b = {},
+--     lualine_a = { 'mode' },
+--     lualine_b = { 'progress' },
 --     lualine_c = {},
 --     lualine_x = {},
 --     lualine_y = {},
@@ -194,13 +194,30 @@ vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 -- vim.opt.relativenumber = false  -- Set relative line numbering to false
 -- vim.opt.number = false           -- Set absolute line numbering to false
 
--- Markdown nested autoindent
+-- Unblock markdown nested indents
 -- vim.api.nvim_create_autocmd("FileType", {
 --   pattern = "markdown",
 --   callback = function()
 --     vim.bo.indentexpr = ""
 --   end,
 -- })
+
+-- -- Allow touching screen to move cursor; Might not be needed
+-- vim.opt.mouse = 'a'
+
+-- -- Map <leader>q to :q without recording and without changing registers
+-- vim.keymap.set('n', '<leader>q', function()
+--   -- stop recording if a user started it
+--   if vim.fn.reg_recording() ~= '' then
+--     -- if in insert mode, leave it first, then stop recording
+--     vim.cmd('stopinsert')
+--     vim.cmd('normal! <Esc>')
+--     vim.cmd('stoprecording') -- stop recording (avoids changing registers)
+--   end
+--   -- finally quit
+--   vim.cmd('q')
+-- end, { noremap = true, silent = true })
+
 
 -------------------------------------------
 ---                ToS                   ---
