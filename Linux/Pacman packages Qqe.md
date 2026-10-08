@@ -121,6 +121,7 @@ nvm
 nwg-displays
 nwg-look
 obs-studio
+openboard
 otf-aurulent-nerd
 otf-codenewroman-nerd
 otf-comicshanns-nerd
