@@ -191,7 +191,9 @@ vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 -- vim.opt.relativenumber = false  -- Set relative line numbering to false
 -- vim.opt.number = false           -- Set absolute line numbering to false
 
--- -- Unblock markdown nested indents
+-- -- Markdown nested indents
+-- vim.opt.autoindent = true
+-- vim.opt.indentexpr = ""
 -- vim.api.nvim_create_autocmd("FileType", {
 --   pattern = "markdown",
 --   callback = function()
