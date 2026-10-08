@@ -110,22 +110,6 @@ end
 ---                Plugins               ---
 --------------------------------------------
 
--- Lualine; git clone https://github.com/nvim-lualine/lualine.nvim.git ~/.local/share/nvim/site/pack/lualine/start/lualine.nvim
-require('lualine').setup {
-  options = {
-    theme = 'horizon',
-    globalstatus = true,
-  },
-  sections = {
-    lualine_a = {'mode'},
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {},
-  },
-}
-
 -- Flash; git clone https://github.com/folke/flash.nvim.git ~/.local/share/nvim/site/pack/flash/start/flash.nvim
 require("flash").setup({
   modes = {
@@ -137,6 +121,11 @@ require("flash").setup({
 })
 vim.keymap.set("n", "s", function() require("flash").jump() end)
 
+
+--------------------------------------------
+---         Plugin Base Specific         ---
+--------------------------------------------
+
 -- Surround; git clone https://github.com/kylechui/nvim-surround ~/.local/share/nvim/site/pack/nvim-surround/start/nvim-surround
 require('nvim-surround').setup({
   surrounds = {
@@ -145,6 +134,24 @@ require('nvim-surround').setup({
     ['{'] = { add = {'{', '}'}},
   }
 })
+
+-- Lualine; git clone https://github.com/nvim-lualine/lualine.nvim.git ~/.local/share/nvim/site/pack/lualine/start/lualine.nvim
+require('lualine').setup {
+  options = {
+    theme = 'horizon',
+    globalstatus = true,
+    section_separators = '',
+    component_separators = '',
+  },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {},
+  },
+}
 
 --------------------------------------------
 ---          Moonlander Specific         ---

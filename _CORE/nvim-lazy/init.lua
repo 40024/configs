@@ -135,11 +135,22 @@ vim.keymap.set("n", "s", function() require("flash").jump() end)
 ---         Plugin Base Specific         ---
 --------------------------------------------
 
+-- -- Surround; git clone https://github.com/kylechui/nvim-surround ~/.local/share/nvim/site/pack/nvim-surround/start/nvim-surround
+-- require('nvim-surround').setup({
+--   surrounds = {
+--     ['('] = { add = {'(', ')'}},
+--     ['['] = { add = {'[', ']'}},
+--     ['{'] = { add = {'{', '}'}},
+--   }
+-- })
+
 -- -- Lualine; git clone https://github.com/nvim-lualine/lualine.nvim.git ~/.local/share/nvim/site/pack/lualine/start/lualine.nvim
 -- require('lualine').setup {
 --   options = {
 --     theme = 'horizon',
 --     globalstatus = true,
+--     section_separators = '',
+--     component_separators = '',
 --   },
 --   sections = {
 --     lualine_a = {'mode'},
@@ -150,15 +161,6 @@ vim.keymap.set("n", "s", function() require("flash").jump() end)
 --     lualine_z = {},
 --   },
 -- }
-
--- -- Surround; git clone https://github.com/kylechui/nvim-surround ~/.local/share/nvim/site/pack/nvim-surround/start/nvim-surround
--- require('nvim-surround').setup({
---   surrounds = {
---     ['('] = { add = {'(', ')'}},
---     ['['] = { add = {'[', ']'}},
---     ['{'] = { add = {'{', '}'}},
---   }
--- })
 
 --------------------------------------------
 ---          Moonlander Specific         ---
