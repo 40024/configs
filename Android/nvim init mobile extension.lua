@@ -29,3 +29,11 @@ vim.keymap.set('n', '<leader>q', function()
   -- finally quit
   vim.cmd('q')
 end, { noremap = true, silent = true })
+
+-- Unblock markdown nested indents
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.bo.indentexpr = ""
+  end,
+})
