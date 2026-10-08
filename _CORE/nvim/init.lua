@@ -144,8 +144,8 @@ require('lualine').setup {
     component_separators = '',
   },
   sections = {
-    lualine_a = {'mode'},
-    lualine_b = {},
+    lualine_a = { 'mode' },
+    lualine_b = { 'progress' },
     lualine_c = {},
     lualine_x = {},
     lualine_y = {},
