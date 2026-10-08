@@ -3,9 +3,6 @@
 ---             Phone only               ---
 --------------------------------------------
 
--- Disable line wrap
-vim.opt.wrap = false
-
 -- Disable line numbers
 vim.opt.number = false
 vim.opt.relativenumber = false

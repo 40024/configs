@@ -12,7 +12,7 @@ dofile(vim.fn.stdpath("config"):gsub("nvim%-lazy", "nvim") .. "/keymaps.lua")
 ---               General                ---
 --------------------------------------------
 
--- Wrap (make true on phones)
+-- Wrap
 vim.opt.wrap = false
 
 -- Line numbers
@@ -116,6 +116,46 @@ if vim.g.vscode then
 end
 
 --------------------------------------------
+---                Plugins               ---
+--------------------------------------------
+
+-- Lualine; git clone https://github.com/nvim-lualine/lualine.nvim.git ~/.local/share/nvim/site/pack/lualine/start/lualine.nvim
+require('lualine').setup {
+  options = {
+    theme = 'horizon',
+    globalstatus = true,
+  },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {},
+  },
+}
+
+-- Flash; git clone https://github.com/folke/flash.nvim.git ~/.local/share/nvim/site/pack/flash/start/flash.nvim
+require("flash").setup({
+  modes = {
+    -- Make sure operator-pending mode is enabled
+    operator = {
+      enabled = true,
+    },
+  },
+})
+vim.keymap.set("n", "s", function() require("flash").jump() end)
+
+-- Surround; git clone https://github.com/kylechui/nvim-surround ~/.local/share/nvim/site/pack/nvim-surround/start/nvim-surround
+require('nvim-surround').setup({
+  surrounds = {
+    ['('] = { add = {'(', ')'}},
+    ['['] = { add = {'[', ']'}},
+    ['{'] = { add = {'{', '}'}},
+  }
+})
+
+--------------------------------------------
 ---          Moonlander Specific         ---
 --------------------------------------------
 
@@ -131,14 +171,31 @@ vim.api.nvim_set_keymap('v', 'k', 'j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'l', 'k', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
 
--- Normal mode: ; → p, Shift-; (:) → P
+-- Normal and Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
-
--- Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 
-
 --------------------------------------------
+---            Phone Specific            ---
+--------------------------------------------
+
+-- vim.o.tabstop = 4        -- Number of visual spaces per tab
+-- vim.o.softtabstop = 4    -- Number of spaces to remove when hitting <Tab>
+-- vim.o.shiftwidth = 4     -- Number of spaces to use for each step of (auto)indent
+-- vim.o.expandtab = false   -- Use tabs instead of spaces
+
+-- vim.opt.relativenumber = false  -- Set relative line numbering to false
+-- vim.opt.number = false           -- Set absolute line numbering to false
+
+-- Markdown nested autoindent
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "markdown",
+--   callback = function()
+--     vim.bo.indentexpr = ""
+--   end,
+-- })
+
+-------------------------------------------
 ---                ToS                   ---
 --------------------------------------------
 
@@ -162,4 +219,3 @@ if not vim.g.vscode then
   -- Quick delete in insert mode
   vim.keymap.set('i', 'X', '<Esc>ddi', { noremap = true, silent = true })
 end
-

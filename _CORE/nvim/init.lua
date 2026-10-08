@@ -3,7 +3,7 @@
 ---               General                ---
 --------------------------------------------
 
--- Wrap (make true on phones)
+-- Wrap
 vim.opt.wrap = false
 
 -- Line numbers
@@ -162,22 +162,31 @@ vim.api.nvim_set_keymap('v', 'k', 'j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'l', 'k', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
 
--- Normal mode: ; → p, Shift-; (:) → P
+-- Normal and Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
-
--- Visual mode: ; → p, Shift-; (:) → P
 vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 
 --------------------------------------------
 ---            Phone Specific            ---
 --------------------------------------------
 
--- vim.o.tabstop = 8        -- Number of visual spaces per tab
--- vim.o.softtabstop = 8    -- Number of spaces to remove when hitting <Tab>
--- vim.o.shiftwidth = 8     -- Number of spaces to use for each step of (auto)indent
+-- vim.o.tabstop = 4        -- Number of visual spaces per tab
+-- vim.o.softtabstop = 4    -- Number of spaces to remove when hitting <Tab>
+-- vim.o.shiftwidth = 4     -- Number of spaces to use for each step of (auto)indent
 -- vim.o.expandtab = false   -- Use tabs instead of spaces
 
---------------------------------------------
+-- vim.opt.relativenumber = false  -- Set relative line numbering to false
+-- vim.opt.number = false           -- Set absolute line numbering to false
+
+-- Markdown nested autoindent
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "markdown",
+--   callback = function()
+--     vim.bo.indentexpr = ""
+--   end,
+-- })
+
+-------------------------------------------
 ---                ToS                   ---
 --------------------------------------------
 
