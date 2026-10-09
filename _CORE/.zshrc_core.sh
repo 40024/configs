@@ -9,24 +9,6 @@ else
     export EDITOR='nvim'
 fi
 
-#  Aliases for Linux 
-# Clipboard
-alias pbcopy='wl-copy'
-alias xsel='wl-copy'
-# Shortcuts for existing
-alias open='dolphin'
-alias q='qalc'
-alias ts='sudo timeshift'
-# My ~/bin scripts
-alias cal='/home/v/bin/cal_wrapper.sh'
-alias dh='python /home/v/bin/dh.py'
-alias dhp='python /home/v/bin/dhp.py'
-alias wh='python /home/v/bin/wh.py'
-alias ical='python /home/v/bin/ical.py'
-alias p='/home/v/bin/pacman_names_wrapper.sh'
-alias sink_combine='python /home/v/bin/sink_combine.py'
-alias mcalc='python "/home/v/Documents/sync-docs/Obsidian Vault/Food/_Macros/Calculator/macro_calculator.py"'
-
 # CD wrapper
 z() {
     # Change directory to the specified path
@@ -60,14 +42,14 @@ alias gp="git push"
 alias gpl="git log --pretty=format:'%h %ad %s'"
 alias gcp="git add .; git commit -m m; git push"
 # Misc
-alias n='nvim'
-alias nl='NVIM_APPNAME=nvim-lazy nvim'
+alias n='NVIM_APPNAME=nvim-lazy nvim'
 alias sn='sudo nvim'
 alias f='fzf --bind "enter:execute(sh -c '\''NVIM_APPNAME=nvim-lazy nvim {} || nvim {}'\'')+abort"'
 alias nk='kitty $(pwd) &'
 alias avenv="source venv/bin/activate"
 alias lg='lazygit'
 alias py='python'
+alias e='exit'
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"

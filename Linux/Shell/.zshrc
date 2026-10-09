@@ -15,12 +15,32 @@ fi
 #  Plugins 
 # oh-my-zsh plugins are loaded  in ~/.hyde.zshrc file, see the file for more information
 
-# Desktop specific config
-alias nl='NVIM_APPNAME=nvim-lazy nvim'
+#  Linux specific config 
+alias pbcopy='wl-copy'
+
+# Aliases for Linux
+# Clipboard
+alias pbcopy='wl-copy'
+alias xsel='wl-copy'
+# Shortcuts for existing
+alias open='dolphin'
+alias q='qalc'
+alias ts='sudo timeshift'
+# My ~/bin scripts
+alias cal='/home/v/bin/cal_wrapper.sh'
+alias dh='python /home/v/bin/dh.py'
+alias dhp='python /home/v/bin/dhp.py'
 alias dynamic_wallpaper='python /home/v/bin/dynamic_wallpaper.py'
+alias ical='python /home/v/bin/ical.py'
+alias mcalc='python "/home/v/Documents/sync-docs/Obsidian Vault/Food/_Macros/Calculator/macro_calculator.py"'
+alias p='/home/v/bin/pacman_names_wrapper.sh'
+alias sink_combine='python /home/v/bin/sink_combine.py'
+alias wh='python /home/v/bin/wh.py'
+
+
 
 # Source main config
-source ~/.zshrc-core
+source ~/.zshrc_core.sh
 
 # Android studio stuff
 export ANDROID_HOME=$HOME/Android/Sdk
