@@ -21,6 +21,8 @@ Animations
 Indenticator #4E8DC2
 
 PlatformIO
+Go
+Github pull requests
 
 
 --- Old ---

@@ -58,18 +58,8 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "cmd+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "alt+down",
         "command": "-editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+up",
-        "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -213,7 +203,8 @@
     },
     {
         "key": "cmd+r",
-        "command": "workbench.action.openRecent"
+        "command": "workbench.action.openRecent",
+        "when": "!browserFocused"
     },
     {
         "key": "ctrl+r",
@@ -701,7 +692,7 @@
     {
         "key": "shift+u",
         "command": "vscode-neovim.ctrl-y",
-        "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+        "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'visual' && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
     },
     {
         "key": "ctrl+y",
@@ -711,7 +702,7 @@
     {
         "key": "shift+d",
         "command": "vscode-neovim.ctrl-e",
-        "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+        "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'visual' && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
     },
     {
         "key": "ctrl+e",
@@ -812,11 +803,6 @@
         "when": "inDiffEditor || gitTreeCompare.active"
     },
     {
-        "key": "u",
-        "command": "undo",
-        "when": "editorTextFocus && neovim.mode == 'normal'"
-    },
-    {
         "key": "cmd+; shift+alt+cmd+c",
         "command": "testing.debugAtCursor",
         "when": "editorTextFocus"
@@ -825,6 +811,11 @@
         "key": "cmd+; cmd+c",
         "command": "-testing.debugAtCursor",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "g g",
+        "command": "cursorTop",
+        "when": "textInputFocus && neovim.mode == 'normal' && editorTextFocus"
     },
     {
         "key": "g d",
@@ -841,12 +832,7 @@
         "command": "git.checkout"
     },
     {
-        "key": "g g",
-        "command": "cursorTop",
-        "when": "textInputFocus && neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
-        "key": "shift+alt+w",
+        "key": "shift+alt+s",
         "command": "workbench.action.moveEditorToNewWindow"
     },
     {
@@ -1146,5 +1132,41 @@
     {
         "key": "shift+cmd+s cmd+d",
         "command": "workbench.action.splitEditorToRightGroup"
+    },
+    {
+        "key": "cmd+k shift+cmd+b",
+        "command": "workbench.action.browser.open"
+    },
+    {
+        "key": "cmd+k cmd+;",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "cmd+k cmd+0",
+        "command": "editor.foldAll"
+    },
+    {
+        "key": "cmd+down",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
+    {
+        "key": "cmd+up",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
+    {
+        "key": "cmd+; shift+cmd+e",
+        "command": "prStatus:github.focus"
+    },
+    {
+        "key": "cmd+; shift+cmd+g",
+        "command": "workbench.view.extension.github-pull-requests"
     }
 ]
