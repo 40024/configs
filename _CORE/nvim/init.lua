@@ -80,9 +80,11 @@ end
 -- Quick delete
 vim.keymap.set('n', 'X', 'dd', { noremap = true, silent = true })
 
--- Bind to VSC buffer instead of separate buffer
+-- Call VSCode undo
 if vim.g.vscode then
-  vim.keymap.set('n', 'u', '<Nop>', { noremap = true })
+  vim.keymap.set('n', 'u', function()
+    require('vscode').action('undo')
+  end, { desc = 'VSCode undo' })
 end
 
 -- Unbind and rebind visual block
@@ -185,8 +187,7 @@ vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 -- vim.o.shiftwidth = 4     -- Number of spaces to use for each step of (auto)indent
 -- vim.o.expandtab = true   -- Use tabs instead of spaces
 
--- vim.opt.autoindent = true
--- vim.opt.indentexpr = ""
+
 
 -- vim.opt.relativenumber = false  -- Set relative line numbering to false
 -- vim.opt.number = false           -- Set absolute line numbering to false

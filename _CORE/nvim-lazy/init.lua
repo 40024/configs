@@ -55,9 +55,11 @@ end
 -- Quick delete
 vim.keymap.set('n', 'X', 'dd', { noremap = true, silent = true })
 
--- Bind to VSC buffer instead of separate buffer
+-- Call VSCode undo
 if vim.g.vscode then
-  vim.keymap.set('n', 'u', '<Nop>', { noremap = true })
+  vim.keymap.set('n', 'u', function()
+    require('vscode').action('undo')
+  end, { desc = 'VSCode undo' })
 end
 
 -- Unbind and rebind visual block
@@ -174,7 +176,7 @@ vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 --   callback = function()
 --     vim.bo.indentexpr = ""
 --   end,
--- }))
+-- })
 
 -- -- Allow touching screen to move cursor; Might not be needed
 -- vim.opt.mouse = 'a'
