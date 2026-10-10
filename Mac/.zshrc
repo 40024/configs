@@ -45,7 +45,7 @@ random_color() {
 # User configuration
 
 # Source zshrc core
-source ~/.zshrc_core
+source ~/.zshrc_core.sh
 
 # Mac one-off aliases
 alias ips="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}' "
