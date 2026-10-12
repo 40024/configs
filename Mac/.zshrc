@@ -52,6 +52,7 @@ alias ips="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}' "
 alias code="/Applications/VSCode.app/Contents/Resources/app/bin/code"
 alias scli="python /Users/user/Dev/servo-cli/main.py"
 alias tmux-start='~/bin/tmux-start.sh'
+p() { git add . && git commit -m '${*:-update: $(git diff --cached --name-only | head -5 | xargs basename -a | paste -sd, -)}' && git push; }
 
 # Pingm custom script
 function pingm() {
