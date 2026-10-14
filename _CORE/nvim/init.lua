@@ -149,6 +149,8 @@ end
 
 -- Flash; git clone https://github.com/folke/flash.nvim.git ~/.local/share/nvim/site/pack/flash/start/flash.nvim
 require("flash").setup({
+  -- Exclude "g" so labels never collide with vscode g-prefixed commands
+  labels = "asdfhjklqwertyuiopzxcvbnm",
   modes = {
     -- Make sure operator-pending mode is enabled
     operator = {
