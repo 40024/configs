@@ -1,15 +1,5 @@
 [
     {
-        "key": "shift+l",
-        "command": "workbench.action.nextEditor",
-        "when": "editorFocus && !filesExplorerFocus && !terminalFocus && neovim.mode == 'normal'"
-    },
-    {
-        "key": "shift+k",
-        "command": "workbench.action.previousEditor",
-        "when": "editorFocus && !filesExplorerFocus && !terminalFocus && neovim.mode == 'normal'"
-    },
-    {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
     },
@@ -971,7 +961,7 @@
         "command": "-workbench.action.splitEditorRight"
     },
     {
-        "key": "ctrl+shift+s ctrl+shift+d",
+        "key": "ctrl+s ctrl+shift+d",
         "command": "workbench.action.splitEditorRight"
     },
     {
@@ -1143,11 +1133,11 @@
         "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
     },
     {
-        "key": "ctrl+shift+s ctrl+s",
+        "key": "ctrl+s ctrl+shift+s",
         "command": "workbench.action.splitEditorDown"
     },
     {
-        "key": "ctrl+shift+s ctrl+w",
+        "key": "ctrl+s ctrl+shift+w",
         "command": "workbench.action.splitEditorUp"
     },
     {
@@ -1236,10 +1226,6 @@
     {
         "key": "ctrl+shift+o",
         "command": "workbench.action.toggleAuxiliaryBar"
-    },
-    {
-        "key": "ctrl+shift+s ctrl+d",
-        "command": "workbench.action.splitEditor"
     },
     {
         "key": "p",
@@ -1342,5 +1328,13 @@
         "key": "ctrl+k ctrl+alt+c",
         "command": "-copyFilePath",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+s ctrl+shift+a",
+        "command": "workbench.action.splitEditorLeft"
+    },
+    {
+        "key": "ctrl+k ctrl+\\",
+        "command": "-workbench.action.splitEditorLeft"
     }
 ]
