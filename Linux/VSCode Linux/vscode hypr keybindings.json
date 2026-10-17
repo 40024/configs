@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
     {
         "key": "shift+l",
@@ -791,7 +790,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+; ctrl+shift+p",
+        "key": "ctrl+k ctrl+shift+c",
         "command": "copyRelativeFilePath"
     },
     {
@@ -1068,7 +1067,8 @@
     },
     {
         "key": "ctrl+k ctrl+shift+c",
-        "command": "notifications.clearAll"
+        "command": "notifications.clearAll",
+        "when": "notificationToastsVisible"
     },
     {
         "key": "z s",
@@ -1328,5 +1328,19 @@
         "key": "ctrl+down",
         "command": "workbench.action.editor.nextChange",
         "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "-copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "copyFilePath"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+c",
+        "command": "-copyFilePath",
+        "when": "editorFocus"
     }
 ]
