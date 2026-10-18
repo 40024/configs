@@ -1,5 +1,15 @@
 [
     {
+        "key": "shift+l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus && !filesExplorerFocus && !terminalFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "shift+k",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus && !filesExplorerFocus && !terminalFocus && neovim.mode == 'normal'"
+    },
+    {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
     },
