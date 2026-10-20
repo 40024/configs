@@ -33,3 +33,5 @@ PipeWire (Instead of PulseAudio)
 Easy Effects +deps (-Qi easyeffects)
 i3 (backup DM: startx i3)
 Display settings
+
+sudo flatpak update --commit=f2949ccb2758360cf0bc1f7dcd3c76445f81109ae572c07ea24d9c80f26ca47d com.github.wwmm.easyeffects
