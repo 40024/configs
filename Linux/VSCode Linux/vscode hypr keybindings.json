@@ -1308,12 +1308,12 @@
         "when": "activeEditor"
     },
     {
-        "key": "ctrl+g",
-        "command": "leetcode.submitSolution"
-    },
-    {
         "key": "ctrl+l ctrl+s",
         "command": "leetcode.searchProblem"
+    },
+    {
+        "key": "ctrl+l ctrl+g",
+        "command": "leetcode.submitSolution"
     },
     {
         "key": "ctrl+up",
