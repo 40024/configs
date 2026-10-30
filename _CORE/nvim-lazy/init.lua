@@ -80,6 +80,12 @@ end, { noremap = true, silent = true })
 vim.keymap.set('v', '>', '>gv', { noremap = true, silent = true })
 vim.keymap.set('v', '<', '<gv', { noremap = true, silent = true })
 
+-- Quick alter word
+vim.keymap.set('n', 'dx', 'diw')
+vim.keymap.set('n', 'dq', 'diw')
+vim.keymap.set('n', 'cx', 'ciw')
+vim.keymap.set('n', 'cq', 'ciw')
+
 --------------------------------------------
 ---             Functions                ---
 --------------------------------------------
