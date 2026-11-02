@@ -17,3 +17,20 @@ map("n", "<C-w>h", "<C-w>h", opts)
 map("n", "<C-w>j", "<C-w>j", opts)
 map("n", "<C-w>k", "<C-w>k", opts)
 map("n", "<C-w>l", "<C-w>l", opts)
+
+
+-- Remap hjkl to jklp in normal mode
+vim.api.nvim_set_keymap('n', 'j', 'h', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'k', 'j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'l', 'k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'p', 'l', { noremap = true, silent = true })
+
+-- Remap hjkl to jklp in visual mode
+vim.api.nvim_set_keymap('v', 'j', 'h', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'k', 'j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'l', 'k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
+
+-- Normal and Visual mode: ; → p, Shift-; (:) → P
+vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
+vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })

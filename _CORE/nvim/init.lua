@@ -170,21 +170,22 @@ vim.keymap.set("n", "s", function() require("flash").jump() end)
 ---          Moonlander Specific         ---
 --------------------------------------------
 
--- Remap hjkl to jklp in normal mode
-vim.api.nvim_set_keymap('n', 'j', 'h', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'k', 'j', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'l', 'k', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'p', 'l', { noremap = true, silent = true })
+-- -- Must go into keymaps.lua for lazyvim
+-- -- Remap hjkl to jklp in normal mode
+-- vim.keymap.set('n', 'j', 'h', { silent = true })
+-- vim.keymap.set('n', 'k', 'j', { silent = true })
+-- vim.keymap.set('n', 'l', 'k', { silent = true })
+-- vim.keymap.set('n', 'p', 'l', { silent = true })
 
--- Remap hjkl to jklp in visual mode
-vim.api.nvim_set_keymap('v', 'j', 'h', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', 'k', 'j', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', 'l', 'k', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', 'p', 'l', { noremap = true, silent = true })
+-- -- Remap hjkl to jklp in visual mode
+-- vim.keymap.set('v', 'j', 'h', { noremap = true, silent = true })
+-- vim.keymap.set('v', 'k', 'j', { noremap = true, silent = true })
+-- vim.keymap.set('v', 'l', 'k', { noremap = true, silent = true })
+-- vim.keymap.set('v', 'p', 'l', { noremap = true, silent = true })
 
--- Normal and Visual mode: ; → p, Shift-; (:) → P
-vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
-vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
+-- -- Normal and Visual mode: ; → p, Shift-; (:) → P
+-- vim.keymap.set('n', ';', 'p', { noremap = true, silent = true })
+-- vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 
 --------------------------------------------
 ---            Phone Specific            ---
@@ -195,7 +196,8 @@ vim.keymap.set('v', ';', 'p', { noremap = true, silent = true })
 -- vim.o.shiftwidth = 4     -- Number of spaces to use for each step of (auto)indent
 -- vim.o.expandtab = true   -- Use tabs instead of spaces
 
-
+-- vim.opt.autoindent = true
+-- vim.opt.indentexpr = ""
 
 -- vim.opt.relativenumber = false  -- Set relative line numbering to false
 -- vim.opt.number = false           -- Set absolute line numbering to false
