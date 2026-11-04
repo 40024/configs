@@ -111,6 +111,11 @@ vim.keymap.set('n', 'dq', 'diw')
 vim.keymap.set('n', 'cx', 'ciw')
 vim.keymap.set('n', 'cq', 'ciw')
 
+-- Start / End of line bindings
+vim.keymap.set('n', '0', '^')
+vim.keymap.set('n', '^', '0')
+vim.keymap.set('n', '4', '$')
+
 --------------------------------------------
 ---             Functions                ---
 --------------------------------------------

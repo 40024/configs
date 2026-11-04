@@ -117,11 +117,11 @@
 					"storage.modifier.specifier.const.cpp"
 				],
 				"settings": {
-					"foreground": "#F92672"
-					// "foreground": "#2BE98A"
+					// "foreground": "#F92672"
+					"foreground": "#2BE98A"
 				}
-			}
-        {
+			},
+			{
 				"scope": "keyword.function.go",
 				"settings": {
 					"foreground": "#2BE98A"
