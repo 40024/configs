@@ -28,7 +28,7 @@
 			"comments": "on",
 			"strings": "on",
 			"other": "off"
-		},
+		}
 	},
 	"[html]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
@@ -38,7 +38,7 @@
 	},
 	"workbench.colorCustomizations": {
 		"editor.lineHighlightBackground": "#1073cf2d",
-		"editor.lineHighlightBorder": "#9fced11f",
+		"editor.lineHighlightBorder": "#9fced11f"
 	},
 	"editor.hover.delay": 0,
 	"editor.hover.hidingDelay": 0,
@@ -58,7 +58,7 @@
 		"textMateRules": [
 			{
 				"scope": [
-					"constant.other",
+					"constant.other"
 				],
 				"settings": {
 					"foreground": "#00b7ff"
@@ -83,7 +83,7 @@
 			},
 			{
 				"scope": [
-					"variable.parameter.function-call",
+					"variable.parameter.function-call"
 				],
 				"settings": {
 					"foreground": "#eee7e7"
@@ -91,7 +91,7 @@
 			},
 			{
 				"scope": [
-					"meta.function-call",
+					"meta.function-call"
 				],
 				"settings": {
 					"foreground": "#d8cdd1"
@@ -103,9 +103,8 @@
 					"source.go",
 					"source.js",
 					"source.cpp",
-					"variable.parameter",
-					"meta.function-call",
-					// "variable.other" // Enable when not working on python, break python
+					"variable.other.lua",
+					"variable.parameter"
 				],
 				"settings": {
 					"foreground": "#49E0FD"
@@ -114,27 +113,22 @@
 			{
 				"scope": [
 					"storage.type.js",
-					"storage.modifier.specifier.const.cpp"
+					"storage.modifier.specifier.const.cpp",
+					"keyword.function.go",
+					"keyword.local.lua"
 				],
-				"settings": {
-					// "foreground": "#F92672"
-					"foreground": "#2BE98A"
-				}
-			},
-			{
-				"scope": "keyword.function.go",
 				"settings": {
 					"foreground": "#2BE98A"
 				}
 			},
 			{
 				"scope": [
-					"markup.heading",
+					"markup.heading"
 				],
 				"settings": {
 					"foreground": "#569CD6"
 				}
-			},
+			}
 		]
 	},
 	"editor.dragAndDrop": false,
@@ -207,6 +201,5 @@
 			"tooltip": "PlatformIO: New Terminal",
 			"commands": "platformio-ide.newTerminal"
 		}
-	],
-	"editor.minimap.enabled": false
+	]
 }
