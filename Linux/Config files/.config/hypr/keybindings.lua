@@ -41,7 +41,6 @@ end
 -- General management
 bind(mainMod .. " + Q",  hl.dsp.window.close(), "[Window Management] close focused window")
 bind(mainMod .. " + W", hl.dsp.window.float({ action = "toggle" }), "[Window Management] toggle float")
-bind(mainMod .. " + G", hl.dsp.group.toggle(), "[Window Management] toggle group")
 bind(mainMod .. " + I", hl.dsp.layout("togglesplit"))    -- dwindle only
 run(mainMod .. " + N", "lockscreen.sh", "[Window Management] lock screen")
 run(mainMod .. " + SHIFT + F", scrPath .. "/windowpin.sh", "[Window Management] toggle pin on focused window")
@@ -82,20 +81,24 @@ for _, item in ipairs({
     bind(mainMod .. " + SHIFT + " .. item[1], hl.dsp.window.resize({ x = item[2], y = item[3], relative = true }), "[Window Management|Resize Active Window] " .. item[4], { repeating = true })
 end
 
--- Move active window: floating windows move by pixels; tiled windows move
--- to the adjacent tile. SUPER+ALT+K is used for down because Calendar keeps
--- the old SUPER+SHIFT+K shortcut.
+-- Move floating windows by pixels and tiled windows to adjacent tiles.
 local function moveActive(dx, dy, direction)
-    local command = string.format(
-        'if [ "$(hyprctl activewindow -j | jq -r .floating)" = "true" ]; then ' ..
-        'hyprctl dispatch moveactive %d %d; else hyprctl dispatch movewindow %s; fi',
-        dx, dy, direction
-    )
-    return hl.dsp.exec_cmd(command)
+    return function()
+        local window = hl.get_active_window()
+        if not window then return end
+
+        if window.floating then
+            hl.dispatch(hl.dsp.window.move({ x = dx, y = dy, relative = true, window = window }))
+        else
+            hl.dispatch(hl.dsp.window.move({ direction = direction, window = window }))
+        end
+    end
 end
 
-bind(mainMod .. " + SHIFT + J", moveActive(-30, 0, "l"), "[Window Management|Move active window across workspace] move active window to the left", { repeating = true })
-bind(mainMod .. " + SHIFT + P", moveActive(30, 0, "r"), "[Window Management|Move active window across workspace] move active window to the right", { repeating = true })
+bind(mainMod .. " + SHIFT + J", moveActive(-30, 0, "left"), "[Window Management|Move active window across workspace] move active window to the left", { repeating = true })
+bind(mainMod .. " + SHIFT + P", moveActive(30, 0, "right"), "[Window Management|Move active window across workspace] move active window to the right", { repeating = true })
+bind(mainMod .. " + SHIFT + L", moveActive(0, -30, "up"), "[Window Management|Move active window across workspace] move active window up", { repeating = true })
+bind(mainMod .. " + SHIFT + K", moveActive(0, 30, "down"), "[Window Management|Move active window across workspace] move active window down", { repeating = true })
 
 -- Mouse move/resize, plus the original keyboard-triggered interactive actions.
 bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), "[Window Management|Move & Resize with mouse] hold to move window", { mouse = true })
@@ -110,14 +113,14 @@ bind(mainMod .. " + X", hl.dsp.window.resize(), "[Window Management|Move & Resiz
 run(mainMod .. " + T", terminal, "[Launcher|Apps] terminal emulator")
 run(mainMod .. " + E", fileManager, "[Launcher|Apps] file explorer")
 run(mainMod .. " + C", editor, "[Launcher|Apps] text editor")
-run(mainMod .. " + SHIFT + K", "gnome-calendar", "[Launcher|Apps] calendar")
 run(mainMod .. " + SHIFT + C", 'env NVIM_APPNAME=nvim-lazy kitty -e nvim -c "autocmd VimEnter * ++once lua vim.schedule(function() vim.cmd(\'enew\'); vim.cmd(\'startinsert\') end)"', "[Launcher|Apps] quick text editor")
-run(mainMod .. " + SHIFT + M", "tutanota-desktop", "[Launcher|Apps] email")
+run(mainMod .. " + G", "tutanota-desktop", "[Launcher|Apps] email")
+run(mainMod .. " + SHIFT + G", "gnome-calendar", "[Launcher|Apps] calendar")
 run(mainMod .. " + R", "keepassxc", "[Launcher|Apps] password manager")
 run(mainMod .. " + SHIFT + T", "gnome-clocks", "[Launcher|Apps] timer")
-run(mainMod .. " + B", browser, "[Launcher|Apps] web browser")
+run(mainMod .. " + B", "vivaldi-hw-open.sh " .. browser, "[Launcher|Apps] web browser")
+run(mainMod .. " + SHIFT + B", "kitty -e " .. harness, "[Launcher|Apps] LLM harness")
 run(mainMod .. " + M", volumeApp, "[Launcher|Apps] volume control")
-run(mainMod .. " + SHIFT + L", "kitty -e " .. harness, "[Launcher|Apps] LLM harness")
 run(mainMod .. " + F", "kitty -e btop", "[Launcher|Apps] system monitor")
 
 -- Rofi menus
