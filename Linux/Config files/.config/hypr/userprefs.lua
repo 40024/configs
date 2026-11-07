@@ -1,5 +1,7 @@
 -- Personal preferences previously kept in userprefs.conf.
 
+hl.env("EDITOR", "nvim")
+
 local personalStartup = {
     "signal-desktop",
     "tutanota-desktop",
