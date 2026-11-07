@@ -42,6 +42,7 @@ end
 bind(mainMod .. " + Q",  hl.dsp.window.close(), "[Window Management] close focused window")
 bind(mainMod .. " + W", hl.dsp.window.float({ action = "toggle" }), "[Window Management] toggle float")
 bind(mainMod .. " + G", hl.dsp.group.toggle(), "[Window Management] toggle group")
+bind(mainMod .. " + I", hl.dsp.layout("togglesplit"))    -- dwindle only
 run(mainMod .. " + N", "lockscreen.sh", "[Window Management] lock screen")
 run(mainMod .. " + SHIFT + F", scrPath .. "/windowpin.sh", "[Window Management] toggle pin on focused window")
 run(mainMod .. " + DELETE", powerMenu, "[Window Management] power menu")
