@@ -6,18 +6,20 @@
   "session": {
     "permissions": "prompt",
     "sidebar": "auto",
-    "verbosity": "medium"
+    "verbosity": "medium",
+    "new_location": "launch"
   },
   "keybinds": {
     "open.menu": ["ctrl+o", "<leader>o", "<leader>w"],
     "help.show": "<leader>shift+/",
 
-    "prompt.editor": ["ctrl+e", "<leader>e"],
+    "prompt.editor": ["ctrl+s", "<leader>e"],
     "leader": "ctrl+b",
     "session.tab.close": "<leader>x",
     "session.new": "<leader>c",
 
-    "input.line.end": "end",
+    "input.line.end": ["ctrl+e", "end"],
+    "command.palette.show": "ctrl+shift+p",
     "session.background": "none",
     "session.export": "<leader>shift+x",
     "session.compact": "<leader>shift+c",
