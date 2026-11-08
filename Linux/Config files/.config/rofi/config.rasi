@@ -9,7 +9,8 @@ configuration {
     display-drun: "Apps:";
     display-window: "Windows:";
     kb-secondary-copy: "";
-    kb-remove-word-back: "Control+c";
+    kb-remove-word-back: "Control+Alt+h";
+    kb-clear-line: "Control+BackSpace";
 }
 
 @theme "tokyo"
