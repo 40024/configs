@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "tabs": {
+    "mode": "auto"
+  },
+  "session": {
+    "permissions": "prompt",
+    "sidebar": "auto",
+    "verbosity": "medium"
+  },
+  "keybinds": {
+    "open.menu": ["ctrl+o", "<leader>o", "<leader>w"],
+    "help.show": "<leader>shift+/",
+
+    "prompt.editor": ["ctrl+e", "<leader>e"],
+    "leader": "ctrl+b",
+    "session.tab.close": "<leader>x",
+    "session.new": "<leader>c",
+
+    "input.line.end": "end",
+    "session.background": "none",
+    "session.export": "<leader>shift+x",
+    "session.compact": "<leader>shift+c",
+    "session.tab.next": ["<leader>j", "shift+k"],
+    "session.tab.previous": ["<leader>p", "shift+l"]
+  },
+  "animations": true,
+  "terminal": {
+    "copy": "select"
+  }
+}
