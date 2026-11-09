@@ -1346,5 +1346,10 @@
     {
         "key": "ctrl+k ctrl+\\",
         "command": "-workbench.action.splitEditorLeft"
+    },
+    {
+        "key": "/",
+        "command": "actions.find",
+        "when": "editorIsOpen && editorFocus && neovim.mode != 'insert'"
     }
 ]
