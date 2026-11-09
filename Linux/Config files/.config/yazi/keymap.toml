@@ -19,7 +19,7 @@ run = "arrow 1"
 desc = "Move down"
 
 [[mgr.prepend_keymap]]
-on = "<C-S-t>"
+on = "<C-g>"
 run = 'shell "$SHELL" --block'
 desc = "Open shell in current directory"
 
