@@ -12,7 +12,7 @@
 
 local mainMod = "SUPER"
 local terminal = "kitty"
-local fileManager = "dolphin"
+local fileManager = terminal .. " -e yazi"
 local editor = "code"
 local browser = "vivaldi"
 local volumeApp = "pavucontrol"
