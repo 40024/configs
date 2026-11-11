@@ -39,6 +39,6 @@ run = "cd --interactive"
 desc = "Jump to directory interactively"
 
 [[mgr.prepend_keymap]]
-on = ["c", "w"]
+on = ["c", "y"]
 run = "shell -- cat %h | wl-copy"
 desc = "Copy file contents"
