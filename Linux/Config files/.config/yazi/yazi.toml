@@ -1,2 +1,7 @@
 [mgr]
 sort_by = "mtime"
+
+[opener]
+edit = [
+  { run = 'env NVIM_APPNAME=nvim-lazy nvim %s', block = true, for = "unix" },
+]
