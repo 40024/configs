@@ -1,4 +1,4 @@
 return {
 	"Saghen/blink.cmp",
-    disabled = false,
+    enabled = false,
 }
