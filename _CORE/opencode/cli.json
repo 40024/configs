@@ -10,21 +10,18 @@
     "new_location": "launch"
   },
   "keybinds": {
+    "leader": "ctrl+x",
     "open.menu": ["ctrl+o", "<leader>o", "<leader>w"],
     "help.show": "<leader>shift+/",
-
     "prompt.editor": ["ctrl+s", "<leader>e"],
-    "leader": "ctrl+b",
-    "session.tab.close": "<leader>x",
-    "session.new": "<leader>c",
+    "session.tab.next": ["<leader>j", "shift+l"],
+    "session.tab.previous": ["<leader>p", "shift+k"],
 
-    "input.line.end": ["ctrl+e", "end"],
-    "command.palette.show": "ctrl+shift+p",
-    "session.background": "none",
     "session.export": "<leader>shift+x",
-    "session.compact": "<leader>shift+c",
-    "session.tab.next": ["<leader>j", "shift+k"],
-    "session.tab.previous": ["<leader>p", "shift+l"]
+    "session.tab.close": "<leader>x",
+
+    "session.new": "<leader>c",
+    "session.compact": "<leader>shift+c"
   },
   "animations": true,
   "terminal": {
