@@ -1350,6 +1350,21 @@
     {
         "key": "/",
         "command": "actions.find",
-        "when": "editorIsOpen && editorFocus && neovim.mode != 'insert'"
+        "when": "editorFocus && editorIsOpen && neovim.mode != 'insert'"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "workbench.action.terminal.newWithProfile",
+        "args": { "profileName": "lazygit" }
+    },
+    {
+        "key": "ctrl+k ctrl+o",
+        "command": "workbench.action.terminal.moveToEditor",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "-editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
     }
 ]

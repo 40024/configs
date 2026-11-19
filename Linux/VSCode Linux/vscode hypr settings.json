@@ -201,5 +201,8 @@
 			"tooltip": "PlatformIO: New Terminal",
 			"commands": "platformio-ide.newTerminal"
 		}
-	]
+	],
+	"terminal.integrated.profiles.linux": {
+	  "lazygit": { "path": "lazygit" }
+	}
 }
