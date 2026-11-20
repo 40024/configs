@@ -1,5 +1,5 @@
 pkg install tmux
-pkg install nvim
+pkg install neovim
 pkg install git
 pkg install openssh
 pkg install man
@@ -12,3 +12,11 @@ pkg install mandoc
 pkg install wget
 pkg install unzip
 pkg install qalc
+pkg install httrack
+pkg install yt-dlp
+pkg install yazi
+pkg install ncdu
+pkg install go
+pkg install jq
+pkg install coreutils
+pkg install mpv
