@@ -1,3 +1,4 @@
+# Navigation/general binds
 [[mgr.prepend_keymap]]
 on = [ "j" ]
 run = [ "leave", "shell --orphan 'pw-play /home/v/.local/share/Steam/steamapps/common/Aimbeast/Aimbeast/Trainer/Sounds/Hit3.ogg'" ]
@@ -42,3 +43,25 @@ desc = "Jump to directory interactively"
 on = ["c", "y"]
 run = "shell -- cat %h | wl-copy"
 desc = "Copy file contents"
+
+
+# GVFS
+[[mgr.prepend_keymap]]
+on = [ "M", "m" ]
+run = "plugin gvfs -- select-then-mount --jump"
+desc = "Select device to mount and jump to its mount point"
+
+[[mgr.prepend_keymap]]
+on = [ "M", "u" ]
+run = "plugin gvfs -- select-then-unmount"
+desc = "Select device then unmount"
+
+[[mgr.prepend_keymap]]
+on = [ "M", "U" ]
+run = "plugin gvfs -- select-then-unmount --eject"
+desc = "Select device then eject"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "m" ]
+run = "plugin gvfs -- jump-to-device"
+desc = "Select device then jump to its mount point"
