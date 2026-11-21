@@ -13,6 +13,7 @@
 local mainMod = "SUPER"
 local terminal = "kitty"
 local fileManager = terminal .. " -e yazi"
+local guiFileManager = "dolphin"
 local editor = "code"
 local browser = "vivaldi"
 local volumeApp = "pavucontrol"
@@ -112,10 +113,11 @@ bind(mainMod .. " + X", hl.dsp.window.resize(), "[Window Management|Move & Resiz
 
 run(mainMod .. " + T", terminal, "[Launcher|Apps] terminal emulator")
 run(mainMod .. " + E", fileManager, "[Launcher|Apps] file explorer")
+run(mainMod .. " + SHIFT + E", guiFileManager, "[Launcher|Apps] Dolphin file manager")
 run(mainMod .. " + C", editor, "[Launcher|Apps] text editor")
 run(mainMod .. " + SHIFT + C", 'env NVIM_APPNAME=nvim-lazy kitty -e nvim -c "autocmd VimEnter * ++once lua vim.schedule(function() vim.cmd(\'enew\'); vim.cmd(\'startinsert\') end)"', "[Launcher|Apps] quick text editor")
 run(mainMod .. " + G", "tutanota-desktop", "[Launcher|Apps] email")
-run(mainMod .. " + SHIFT + G", "gnome-calendar", "[Launcher|Apps] calendar")
+run(mainMod .. " + SHIFT + G", "env -u GTK_THEME gnome-calendar", "[Launcher|Apps] calendar")
 run(mainMod .. " + R", "keepassxc", "[Launcher|Apps] password manager")
 run(mainMod .. " + SHIFT + T", "gnome-clocks", "[Launcher|Apps] timer")
 run(mainMod .. " + B", "vivaldi-hw-open.sh " .. browser, "[Launcher|Apps] web browser")
