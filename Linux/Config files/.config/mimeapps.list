@@ -26,3 +26,8 @@ x-scheme-handler/signalcaptcha=signal.desktop
 audio/x-mra=mpv.desktop
 audio/x-m4a=mpv.desktop
 video/webm=mpv.desktop
+video/mkv=mpv.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+audio/ogg=mpv.desktop
+
+[Added Associations]
